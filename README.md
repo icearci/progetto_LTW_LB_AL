@@ -1,6 +1,5 @@
 # progetto_LTW_LB_AL
 
-#cose cose cose
-se scrivo qua?
-funge?
+progetto per linguaggi e tecnologie per il web
+università La Sapienza ,facoltà Ingegneria Informatica e Automatica
 
