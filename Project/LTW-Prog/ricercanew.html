@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+spiegare il funzionamento del file
+-->
+<html>
+    <head>
+        <title>ricerca</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="responsive.css">
+    </head>
+    
+<div class="navbar">
+  <a class="active" href="homenew.html">Home</a>
+  <a href="immissionenew.html">Aggiungi le tue macchine</a>
+  <a href="ricercanew.html">Cerca un maker</a>
+  <a href="chi_siamonew.html">Chi siamo</a>
+</div>
+
+<div style="padding-left:20px">
+  <h2>Ricerca i maker</h2>
+  <h3>Vuoi l'elenco completo?</h3>
+  <!--si connette a ricercanew.PHP-->
+  <form action="scrivitutti.php" method="post">
+    <input type="submit" value="Invia">
+  </form>
+</div>   
+
+<div style="padding-left:20px">
+  <h3>Vuoi fare una ricerca?</h3>
+  <!--si connette a ricercanew.PHP-->
+  <form action="ricercanew.php" method="post">
+    <input type="submit"  value="Invia">
+  </form>
+</div>   
+
+</html>
