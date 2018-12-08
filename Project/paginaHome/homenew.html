@@ -3,124 +3,129 @@
 spiegare il funzionamento del file
 -->
 <html lang="en">
-<head>
-<title>La rete dei maker</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="../responsive_css/responsive.css" rel="stylesheet"/>
+<head>
+    <title>La rete dei maker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="../responsive_css/responsive.css" rel="stylesheet" />
 
 </head>
+
 <body>
 
-<!-- inizio slide automatico -->    
+    <!-- inizio slide automatico -->
 
-<div class="slideshow-container">
-    background-image: url('https://static1.sw-cdn.net/files/cms/create/sorting-miniature-prints.jpg');
-    <div class="mySlides fade">
-        <img src="../immagini/carbon3D.jpg" style="width:100%">
-        <div class="textslide1"><b>LA RETE DEI MAKER</b></div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="../immagini/carbon3D.jpg" style="width:100%">
+            <div class="textslide1"><b>LA RETE DEI MAKER</b></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../immagini/cnc1.jpg" style="width:100%">
+            <div class="textslide"><b>mettiamo in contatto chi ha stampanti 3D, Laser, CNC</b></div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="../immagini/LaserE.jpg" style="width:100%">
+            <div class="textslide"><b>con chi necessita di lavori di stampa 3D, incisione, taglio</b></div>
+        </div>
     </div>
 
-    <div class="mySlides fade">
-        <img src="../immagini/cnc1.jpg" style="width:100%">
-        <div class="textslide"><b>mettiamo in contatto chi ha stampanti 3D, Laser, CNC</b></div>
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
 
-    <div class="mySlides fade">
-        <img src="../immagini/LaserE.jpg" style="width:100%">
-        <div class="textslide"><b>con chi necessita di lavori di stampa 3D, incisione, taglio</b></div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // cambia immagine ogni tot millisecondi
+        }
+    </script>
+
+    <!-- fine slide automatico -->
+
+
+    <div class="navbar">
+        <a class="active" href="../paginaHome/homenew.html">Home</a>
+        <a href="../paginaImmissione/immissionenew.html">Aggiungi le tue macchine</a>
+        <a href="../paginaRicerca/ricercanew.html">Cerca un maker</a>
+        <a class="right" href="../paginaChiSiamo/chi_siamonew.html">Chi siamo</a>
     </div>
-</div>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1;}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // cambia immagine ogni tot millisecondi
-}
-</script>
-
-<!-- fine slide automatico -->
+    <div class="row">
+        <div class="side">
+            <h2>Le tecnologie</h2>
+            <h3>Stampa 3D a filamento</h3>
+            <img src="../immagini/fdm.jpg" alt="foto fdm" class="responsive" height="200">
+            <p>Per la realizzazione (in plastica: PLA, ABS, Nylon, Ibridi vari) di prototipi
+                o di prodotti finiti, come box, cosplay, oggetti di design.</p>
+            <h3>Stampa 3D a resina</h3>
+            <img src="../immagini/anelli.jpg" alt="foto resina" class="responsive" height="200">
+            <p>Usata soprattutto in gioielleria e nel dentale grazie all'altissima risoluzione
+                ed alla disponibilit� di resine castabili.</p>
+            <h3>Lavori con CNC</h3>
+            <img src="../immagini/cnc.jpg" alt="foto cnc" class="responsive" height="200">
+            <p>Per la foratura, incisione, fresatura di legno, metalli e pietre, mediante
+                macchine a controllo numerico che permettono lavori di precisione partendo da un file CAD.</p>
+            <h3>Lavori con il Laser</h3>
+            <img src="../immagini/laser.jpg" alt="foto laser" class="responsive" height="200">
+            <p>Per il taglio e l'incisione di legno, plastica ed altri materiale morbidi.
+                Per la realizzazione di foto su legno e di circuiti stampati. Sempre a controllo numerico.</p>
+        </div>
 
 
-<div class="navbar">
-  <a class="active" href="../paginaHome/homenew.html">Home</a>
-  <a href="../paginaImmissione/immissionenew.html">Aggiungi le tue macchine</a>
-  <a href="../paginaRicerca/ricercanew.html">Cerca un maker</a>
-  <a class="right" href="../paginaChiSiamo/chi_siamonew.html">Chi siamo</a>
-</div>
+        <div class="main">
+            <h4>Ultime news dal settore maker</h4>
+            <h2>Costruirsi i robot con un kit</h2>
+            <h5>27 Novembre 2018</h5>
+            <img src="../immagini/robot.jpg" alt="foto robot" class="responsive" height="300">
+            <p>La creazione semplice ed economica di robot, fino a 4 assi e 4 gradi di libert�,
+                � oggi alla portata di qualsiasi progettista e applicazione.</p>
+            <p>RS Components, distributore globale di prodotti di elettronica e manutenzione, ha presentato due nuovi
+                kit
+                che comprendono tutti i componenti per la costruzione di un braccio completamente robotizzato a 4 assi.</p>
+            <br>
 
-<div class="row">
-  <div class="side">
-      <h2>Le tecnologie</h2>
-      <h3>Stampa 3D a filamento</h3>
-      <img src="../immagini/fdm.jpg" alt="foto fdm" class="responsive" height="200">
-      <p>Per la realizzazione (in plastica: PLA, ABS, Nylon, Ibridi vari) di prototipi 
-          o di prodotti finiti, come box, cosplay, oggetti di design.</p>
-      <h3>Stampa 3D a resina</h3>
-      <img src="../immagini/anelli.jpg" alt="foto resina" class="responsive" height="200">
-      <p>Usata soprattutto in gioielleria e nel dentale grazie all'altissima risoluzione 
-          ed alla disponibilit� di resine castabili.</p>
-      <h3>Lavori con CNC</h3>
-      <img src="../immagini/cnc.jpg" alt="foto cnc" class="responsive" height="200">
-      <p>Per la foratura, incisione, fresatura di legno, metalli e pietre, mediante 
-          macchine a controllo numerico che permettono lavori di precisione partendo da un file CAD.</p>
-      <h3>Lavori con il Laser</h3>
-      <img src="../immagini/laser.jpg" alt="foto laser" class="responsive" height="200">
-      <p>Per il taglio e l'incisione di legno, plastica ed altri materiale morbidi. 
-          Per la realizzazione di foto su legno e di circuiti stampati. Sempre a controllo numerico.</p>
-  </div>
-    
-    
-  <div class="main">
-      <h4>Ultime news dal settore maker</h4>
-      <h2>Costruirsi i robot con un kit</h2>
-      <h5>27 Novembre 2018</h5>
-      <img src="../immagini/robot.jpg" alt="foto robot" class="responsive" height="300">
-      <p>La creazione semplice ed economica di robot, fino a 4 assi e 4 gradi di libert�, 
-          � oggi alla portata di qualsiasi progettista e applicazione.</p>
-      <p>RS Components, distributore globale di prodotti di elettronica e manutenzione, ha presentato due nuovi kit 
-          che comprendono tutti i componenti per la costruzione di un braccio completamente robotizzato a 4 assi.</p>
-      <br>
-      
-      <h2>Automotive, stampa 3D in crescita per cinque anni</h2>
-      <h5>7 Novembre 2018</h5>
-      <img src="../immagini/automotive3D.jpg" alt="foto automotive 3D" class="responsive" height="500">
-      <p>Causa della crescita � l'aumento della necessit� del settore automotive di produrre progetti 
-          complessi in un breve lasso di tempo e la necessit� di utilizzare in modo efficiente le risorse.</p>
-      <p>Inoltre, la capacit� delle stampanti 3D di produrre parti personalizzate con precisione, meno costi e tempi ridotto e
-          l'alta risoluzione del prodotto finito completano la crescita del mercato automotive. Tuttavia, l'alto costo 
-          di stampa e l'indisponibilit� di manodopera qualificata ostacolano la crescita del settore.</p>
-  </div>
-</div>
-<p>
-    costruzione
-    persone
-    cose belle
-</p>
-<div class="footer">
-  <h2>Footer</h2>
-</div>
+            <h2>Automotive, stampa 3D in crescita per cinque anni</h2>
+            <h5>7 Novembre 2018</h5>
+            <img src="../immagini/automotive3D.jpg" alt="foto automotive 3D" class="responsive" height="500">
+            <p>Causa della crescita � l'aumento della necessit� del settore automotive di produrre progetti
+                complessi in un breve lasso di tempo e la necessit� di utilizzare in modo efficiente le risorse.</p>
+            <p>Inoltre, la capacit� delle stampanti 3D di produrre parti personalizzate con precisione, meno costi e
+                tempi ridotto e
+                l'alta risoluzione del prodotto finito completano la crescita del mercato automotive. Tuttavia, l'alto
+                costo
+                di stampa e l'indisponibilit� di manodopera qualificata ostacolano la crescita del settore.</p>
+        </div>
+    </div>
+    <p>
+        costruzione
+        persone
+        cose belle
+    </p>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
 
 </body>
+
 </html>
