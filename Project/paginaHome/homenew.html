@@ -1,266 +1,106 @@
 <!DOCTYPE html>
+
 <!--
 spiegare il funzionamento del file
 -->
+
 <html lang="en">
 
+
 <head>
-    <title>Printable Of Things</title>
+
+    <title>
+      Printable Of Things</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    // Add the new slick-theme.css if you want the default styling
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-	<!--fine slick-->
-
-     <!--tutorial e get started-->
-    <link rel="stylesheet" type="text/css" href="https://static1.sw-cdn.net/rrstatic/stylesheets/screen.css?tag=g71Gt1LzkNjmlQat">
-     <!--responsive-->
-    <link href="../responsive_css/responsive.css" rel="stylesheet" />
-     <!--carosello e banner testo STATS-->
-    <link rel="stylesheet" type="text/css" href="https://static1.sw-cdn.net/rrstatic/stylesheets/screen.css?tag=g71Gt1LzkNjmlQat">
-    <link rel="stylesheet" type="text/css" href="https://static1.sw-cdn.net/rrstatic/styles/jquery/jquery-ui-1.8.18.custom.css?tag=8clF5BX_ULaIhHff">
-    <link rel="stylesheet" type="text/css" href="https://static1.sw-cdn.net/rrstatic/stylesheets/jquery.fancybox.css?tag=oPxpF4ZVB3An1hZa" media="screen">
-  
-      <link rel="alternate" type="application/rss+xml" title="Shapeways Blog RSS" href="http://www.shapeways.com/blog/feed">
-   
-<style type="text/css">
-    .VueCarousel-navigation-button[data-v-453ad8cd] {
-      position: absolute;
-      top: 50%;
-      box-sizing: border-box;
-      color: #000;
-      text-decoration: none;
-      appearance: none;
-      border: none;
-      background-color: transparent;
-      padding: 0;
-      cursor: pointer;
-      outline: none;
-    }
-
-    .VueCarousel-navigation-next[data-v-453ad8cd] {
-      right: 0;
-      transform: translateY(-50%) translateX(100%);
-      font-family: "system";
-    }
-
-    .VueCarousel-navigation-prev[data-v-453ad8cd] {
-      left: 0;
-      transform: translateY(-50%) translateX(-100%);
-      font-family: "system";
-    }
-
-    .VueCarousel-navigation--disabled[data-v-453ad8cd] {
-      opacity: 0.5;
-      cursor: default;
-    }
 
     
-    /* Define the "system" font family */
-    @font-face {
-      font-family: system;
-      font-style: normal;
-      font-weight: 300;
-      src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"),
-        local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Symbol"),
-        local("Roboto-Light"), local("DroidSans"), local("Tahoma");
-    }
+     <!--tutorial e get started-->
 
-    </style><style type="text/css">
-    .VueCarousel-pagination[data-v-438fd353] {
-      width: 100%;
-      text-align: center;
-    }
+    <link rel="stylesheet" type="text/css" href="https://static1.sw-cdn.net/rrstatic/stylesheets/screen.css?tag=g71Gt1LzkNjmlQat">
 
-    .VueCarousel-dot-container[data-v-438fd353] {
-      display: inline-block;
-      margin: 0 auto;
-      padding: 0;
-    }
+     <!--responsive-->
 
-    .VueCarousel-dot[data-v-438fd353] {
-      display: inline-block;
-      cursor: pointer;
-    }
+    <link href="../responsive_css/responsive.css" rel="stylesheet" />
 
-    .VueCarousel-dot-button[data-v-438fd353] {
-      appearance: none;
-      border: none;
-      background-color: transparent;
-      padding: 0;
-      border-radius: 100%;
-      outline: none;
-      cursor: pointer;
-    }
+     <!--carosello e banner testo STATS-->
 
-    .VueCarousel-dot-button[data-v-438fd353]:focus {
-      outline: 1px solid lightblue;
-    }
-
-    </style><style type="text/css">
-    .VueCarousel-slide {
-      flex-basis: inherit;
-      flex-grow: 0;
-      flex-shrink: 0;
-      user-select: none;
-      backface-visibility: hidden;
-      -webkit-touch-callout: none;
-      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      outline: none;
-    }
-
-    .VueCarousel-slide-adjustableHeight {
-      display: table;
-      flex-basis: auto;
-      width: 100%;
-    }
-
-    </style><style type="text/css">
-    .VueCarousel {
-      position: relative;
-    }
-
-    .VueCarousel-wrapper {
-      width: 100%;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .VueCarousel-inner {
-      display: flex;
-      flex-direction: row;
-      backface-visibility: hidden;
-    }
-
-    .VueCarousel-inner--center {
-      justify-content: center;
-    }
-
-    </style><div style="width: 1px; height: 1px; display: inline; position: absolute;"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/aol/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/index/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/n/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/outbrain/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/pubmatic/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/taboola/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/triplelift/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU"></div><script type="text/javascript" src="//s.adroll.com/j/sendrolling.js"></script><img src="https://d.adroll.com/fb/tr/?id=738965256182371&amp;ev=ViewContent&amp;cd[content_type]=product&amp;cd[content_ids]=adroll_dummy_product_&amp;cd[application_id]=321379434608647&amp;cd[product_catalog_id]=1641779162753556&amp;adroll_fpc=1205e8a4965593b0eb3f59b96065978a" width="1" height="1" border="0"><div style="width: 1px; height: 1px; display: inline; position: absolute;"><img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/r/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU">
-    <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/b/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU">
-    <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/x/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU">
-    <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/l/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU">
-    <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/o/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU">
-    <img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/g/out?advertisable=XEFJ6SLJYNAGJA4OOFXLPU&amp;google_nid=adroll4">
-    </div>
-    <style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}
-    .fb_reposition{overflow:hidden;position:relative}
-    .fb_invisible{display:none}
-    .fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}
-    .fb_reset>div{overflow:hidden}
-    @keyframes fb_transform{from{opacity:0;transform:scale(.95)}
-    to{opacity:1;transform:scale(1)}
-    }
-    .fb_animate{animation:fb_transform .3s forwards}
-
-    .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}
-    .fb_dialog_advanced{border-radius:8px;padding:10px}
-    .fb_dialog_content{background:#fff;color:#373737}
-    .fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}
-    .fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}
-    .fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}
-    .fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}
-    .fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}
-    .fb_dialog_iframe{line-height:0}
-    .fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}
-    .fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}
-    body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}
-    .fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}
-    .fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}
-    .fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}
-    .fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}
-    .loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}
-    #fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}
-    #fb-root #fb_dialog_ipad_overlay.hidden{display:none}
-    .fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}
-    .fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}
-    .fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}
-    .fb_dialog_content .dialog_header table{height:43px;width:100%}
-    .fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}
-    .fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}
-    .fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}
-    .fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
-    .fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}
-    .fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}
-    .fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}
-    #fb_dialog_loader_close{float:left}
-    .fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}
-    .fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
-    #fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}
-    @keyframes rotateSpinner{0%{transform:rotate(0deg)}
-    100%{transform:rotate(360deg)}
-    }
-
-    .fb_iframe_widget{display:inline-block;position:relative}
-    .fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}
-    .fb_iframe_widget iframe{position:absolute}
-    .fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}
-    .fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}
-    .fb_iframe_widget_lift{z-index:1}
-    .fb_iframe_widget_fluid{display:inline}
-    .fb_iframe_widget_fluid span{width:100%}
-
-    .fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}
-    .fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}
-    .fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}
-    .fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}
-    .fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}
-    .fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}
-    .fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}
-    .fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}
-    .fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}
-    .fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}
-    .fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}
-    @keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}
-    50%{transform:scale(1.03, 1.03);transform-origin:bottom right}
-    100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}
-    }
-    @keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}
-    100%{opacity:1;top:0}
-    }
-    @keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}
-    100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}
-    }
-    @keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}
-    100%{opacity:0;top:20px}
-    }
-    @keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}
-    70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}
-    100%{transform:scale(1, 1)}
-    }
-    </style>
     <!--fine  carosello e banner testo STATS-->
+<!-- nuovo carousel-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+    <link rel="stylesheet" href="../slider/css/style.css">
+<!-- fine nuovo carousel-->
 </head>
+
 
 <body>
 
+
     <!-- inizio slide automatico -->
 
+
     <div class="slideshow-container">
+
         <div class="mySlides fade">
+
             <img src="../immagini/carbon3D.jpg" style="width:100%">
-            <div class="textslide1"><b>LA RETE DEI MAKER</b></div>
+
+            <div class="textslide1">
+              <b>
+              LA RETE DEI MAKER</b>
+            </div>
+
         </div>
 
+
         <div class="mySlides fade">
+
             <img src="../immagini/cnc1.jpg" style="width:100%">
-            <div class="textslide"><b>mettiamo in contatto chi ha stampanti 3D, Laser, CNC</b></div>
+
+            <div class="textslide">
+              <b>
+              mettiamo in contatto chi ha stampanti 3D, Laser, CNC</b>
+            </div>
+
         </div>
 
+
         <div class="mySlides fade">
+
             <img src="../immagini/LaserE.jpg" style="width:100%">
-            <div class="textslide"><b>con chi necessita di lavori di stampa 3D, incisione, taglio</b></div>
+
+            <div class="textslide">
+              <b>
+              con chi necessita di lavori di stampa 3D, incisione, taglio</b>
+            </div>
+
         </div>
+
     </div>
+
 
     <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+
+        <span class="dot">
+
+        </span>
+
+        <span class="dot">
+
+        </span>
+
+        <span class="dot">
+
+        </span>
+
     </div>
 
+
     <script>
+
         var slideIndex = 0;
         showSlides();
 
@@ -272,7 +112,8 @@ spiegare il funzionamento del file
                 slides[i].style.display = "none";
             }
             slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1; }
+            if (slideIndex >
+             slides.length) { slideIndex = 1; }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
@@ -282,267 +123,599 @@ spiegare il funzionamento del file
         }
     </script>
 
+
     <!-- fine slide automatico -->
 
 
+
     <div class="navbar">
-        <a class="active" href="../paginaHome/homenew.html">Home</a>
-        <a href="../paginaImmissione/immissionenew.html">Aggiungi le tue macchine</a>
-        <a href="../paginaRicerca/ricercanew.html">Cerca un maker</a>
-        <a class="right" href="../paginaChiSiamo/chi_siamonew.html">Chi siamo</a>
+
+        <a class="active" href="../paginaHome/homenew.html">
+          Home</a>
+
+        <a href="../paginaImmissione/immissionenew.html">
+          Aggiungi le tue macchine</a>
+
+        <a href="../paginaRicerca/ricercanew.html">
+          Cerca un maker</a>
+
+        <a class="right" href="../paginaChiSiamo/chi_siamonew.html">
+          Chi siamo</a>
+
     </div>
+
     <!-- How it Works -->
 
+
     <div class="sw--full-width sw-dms--bg-white">
+
     <div class="sw-grid sw--padding-vert-5-percent sw--margin-top-0">
+
   
       <div class="col-1-4 col-1-2--tab sw--margin-bottom-4--tab" data-sw-tracking="clicked" data-sw-tracking-link-type="how-it-works-icon" data-sw-tracking-link-id="how-it-works-upload" data-sw-tracking-target-page-identifier="" data-sw-tracking-services="mixpanel">
+
         <div class="sw--position-relative sw--overflow-hidden sw--margin-auto sw--margin-vert-0" style="width:140px; height:140px;">
-          <img class="sw--position-absolute sw--position-top sw--position-left" src="https://static1.sw-cdn.net/files/cms/homepage/Icons-Upload-All-Animation-2.gif" alt="Upload">  
+
+          <img class="sw--position-absolute sw--position-top sw--position-left" src="https://static1.sw-cdn.net/files/cms/homepage/Icons-Upload-All-Animation-2.gif" alt="Upload">
+
         </div>
+
         <p class="sw--text-center sw--font-size-16 sw--font-size-12--mob sw--padding-top-2 sw--padding-top-0--mob sw--margin-bottom-0">
+
             Upload a 3D model, and be sure it's a supported one.
         </p>
+
       </div>
+
   
       <div class="col-1-4 col-1-2--tab sw--margin-bottom-4--tab" data-sw-tracking="clicked" data-sw-tracking-link-type="how-it-works-icon" data-sw-tracking-link-id="how-it-works-materials" data-sw-tracking-target-page-identifier="" data-sw-tracking-services="mixpanel">
+
         <div class="sw--position-relative sw--overflow-hidden sw--margin-auto sw--margin-vert-0" style="width:140px; height:140px;">
+
           <img class="sw--position-absolute sw--position-top" src="https://static1.sw-cdn.net/files/cms/homepage/Icons-Upload-All-Animation-2.gif" alt="50+ Materials" style="left:-140px;">
+
         </div>
+
         <p class="sw--text-center sw--font-size-16 sw--font-size-12--mob sw--padding-top-2 sw--padding-top-0--mob sw--margin-bottom-0">
+
             Choose your material and type of printing in a Easy or more Detailed way.
         </p>
+
       </div>
+
   
       <div class="col-1-4 col-1-2--tab sw--margin-bottom-4--tab" data-sw-tracking="clicked" data-sw-tracking-link-type="how-it-works-icon" data-sw-tracking-link-id="how-it-works-3d-print" data-sw-tracking-target-page-identifier="" data-sw-tracking-services="mixpanel">
+
         <div class="sw--position-relative sw--overflow-hidden sw--margin-auto sw--margin-vert-0" style="width:140px; height:140px;">
+
           <img class="sw--position-absolute sw--position-top" src="https://static1.sw-cdn.net/files/cms/homepage/Icons-Upload-All-Animation-2.gif" alt="D Print" style="left:-280px;">
+
         </div>
+
         <p class="sw--text-center sw--font-size-16 sw--font-size-12--mob sw--padding-top-2 sw--padding-top-0--mob sw--margin-bottom-0">
+
             We'll find a User who match your preferences near you,and he will print your 3D model.
         </p>
+
       </div>
+
   
       <div class="col-1-4 col-1-2--tab sw--margin-bottom-4--tab" data-sw-tracking="clicked" data-sw-tracking-link-type="how-it-works-icon" data-sw-tracking-link-id="how-it-works-delivery" data-sw-tracking-target-page-identifier="" data-sw-tracking-services="mixpanel">
+
         <div class="sw--position-relative sw--overflow-hidden sw--margin-auto sw--margin-vert-0" style="width:140px; height:140px;">
-          <img class="sw--position-absolute sw--position-top sw--position-right" src="https://static1.sw-cdn.net/files/cms/homepage/Icons-Upload-All-Animation-2.gif" alt="Delivered">  
+
+          <img class="sw--position-absolute sw--position-top sw--position-right" src="https://static1.sw-cdn.net/files/cms/homepage/Icons-Upload-All-Animation-2.gif" alt="Delivered">
+
         </div>
+
         <p class="sw--text-center sw--font-size-16 sw--font-size-12--mob sw--padding-top-2 sw--padding-top-0--mob sw--margin-bottom-0">
+
             Meet the Printer and take  your custom 3D printed product by your self or get it delvered directly to you.</p>
+
       </div>
+
   
     </div>
+
     </div>
+
   
    <!-- GET STARTED -->
+
     <div class="sw--width-full sw--padding-vert-5-percent sw--clearfix sw--position-relative" style="background-repeat:no-repeat;
       background-image: url('https://static1.sw-cdn.net/files/cms/create/sorting-miniature-prints.jpg');
       background-blend-mode: multiply; background-size:cover;">
+
          
             <div class="sw-grid sw--margin-top-0">
+
               <div class="col-1-1 sw--text-center">
-                <h3 class="sw-dms--color-white sw--font-size-36 sw--font-size-22--mob sw--margin-bottom-5-percent">Ready to get started?</h3>
+
+                <h3 class="sw-dms--color-white sw--font-size-36 sw--font-size-22--mob sw--margin-bottom-5-percent">
+                  Ready to get started?</h3>
+
               </div>
+
               <div class="col-1-3 col-1-2--tab col-1-1--mob sw--margin-bottom-6">
+
               <div class="sw-dms--bg-white sw--box-shadow-1 sw--border-radius-4 text-center sw--padding-10-percent">
+
                 <a href="/mymodels/" class="sw--link-dark" data-sw-tracking="clicked" data-sw-tracking-link-type="getting-started-welcome" data-sw-tracking-target-section="upload" data-sw-tracking-link-id="position-1" data-sw-tracking-target-subsection="" data-sw-tracking-target-page-identifier="getting-started-welcome" data-sw-tracking-services="mixpanel">
-                  <h4 class="">Upload a 3D Model</h4>
-                  <div class="icon-upload sw--font-size-60 sw--padding-bottom-6 sw--padding-top-4 sw-dms--color-grey-46"></div>
-                  <p class="sw--margin-bottom-6 sw--font-size-16 sw--font-size-16-mobile weight-light ">Get instant printability checks in all of our materials</p>
+
+                  <h4 class="">
+                    Upload a 3D Model</h4>
+
+                  <div class="icon-upload sw--font-size-60 sw--padding-bottom-6 sw--padding-top-4 sw-dms--color-grey-46">
+
+                  </div>
+
+                  <p class="sw--margin-bottom-6 sw--font-size-16 sw--font-size-16-mobile weight-light ">
+                    Get instant printability checks in all of our materials</p>
+
                 </a>
+
                   
               
-              <a class="btn-primary" href="/login" data-sw-login-link="sign-up" data-sw-login-link-internal-referrer="cms_modal">Create Free Account</a>
+              <a class="btn-primary" href="/login" data-sw-login-link="sign-up" data-sw-login-link-internal-referrer="cms_modal">
+                Create Free Account</a>
+
   
                           
               </div>
+
             </div>
+
               
             <div class="col-1-3 col-1-2--tab col-1-1--mob sw--margin-bottom-6">
+
               <div class="sw-dms--bg-white sw--box-shadow-1 sw--border-radius-4 text-center sw--padding-10-percent">
+
                 <a href="https://design.shapeways.com" class="sw--link-dark" data-sw-tracking="clicked" data-sw-tracking-link-type="create" data-sw-tracking-target-section="hire-designer" data-sw-tracking-link-id="hire-designer" data-sw-tracking-target-subsection="" data-sw-tracking-target-page-identifier="create" data-sw-tracking-services="mixpanel">
-                  <h4 class="">Design with Shapeways</h4>
-                  <div class="icon-hire sw--font-size-60 sw--padding-bottom-6 sw--padding-top-4 sw-dms--color-grey-46"></div>
-                  <p class="sw--margin-bottom-0 sw--font-size-16 sw--font-size-16-mobile weight-light">Find a professional designer to bring your idea to life</p>
+
+                  <h4 class="">
+                    Design with Shapeways</h4>
+
+                  <div class="icon-hire sw--font-size-60 sw--padding-bottom-6 sw--padding-top-4 sw-dms--color-grey-46">
+
+                  </div>
+
+                  <p class="sw--margin-bottom-0 sw--font-size-16 sw--font-size-16-mobile weight-light">
+                    Find a professional designer to bring your idea to life</p>
+
                 </a>
-                <a href="https://design.shapeways.com" class="btn-primary sw--margin-top-6" style="width:160px" data-sw-tracking="clicked" data-sw-tracking-link-type="create" data-sw-tracking-target-section="hire-designer" data-sw-tracking-link-id="hire-designer" data-sw-tracking-target-subsection="" data-sw-tracking-target-page-identifier="create" data-sw-tracking-services="mixpanel">Start Designing</a>
+
+                <a href="https://design.shapeways.com" class="btn-primary sw--margin-top-6" style="width:160px" data-sw-tracking="clicked" data-sw-tracking-link-type="create" data-sw-tracking-target-section="hire-designer" data-sw-tracking-link-id="hire-designer" data-sw-tracking-target-subsection="" data-sw-tracking-target-page-identifier="create" data-sw-tracking-services="mixpanel">
+                  Start Designing</a>
+
               </div>
+
             </div>
+
              
             <div class="col-1-3 col-1-2--tab col-1-1--mob sw--margin-bottom-6">
+
               <div class="sw-dms--bg-white sw--box-shadow-1 sw--border-radius-4 text-center sw--padding-10-percent">
+
                 <a href="/tutorials/getting-inspired/" class="sw--link-dark" data-sw-tracking="clicked" data-sw-tracking-link-type="getting-started-welcome" data-sw-tracking-target-section="tutorials" data-sw-tracking-link-id="position-5" data-sw-tracking-target-subsection="" data-sw-tracking-target-page-identifier="tutorials" data-sw-tracking-services="mixpanel">
-                  <h4 class="">Tutorials</h4>
-                  <div class="icon-tutorials sw--font-size-60 sw--padding-bottom-6 sw--padding-top-4 sw-dms--color-grey-46"></div>
-                  <p class="sw--margin-bottom-0 sw--font-size-16 sw--font-size-16-mobile weight-light">Tutorials for beginners to start your 3D printing adventure</p>
+
+                  <h4 class="">
+                    Tutorials</h4>
+
+                  <div class="icon-tutorials sw--font-size-60 sw--padding-bottom-6 sw--padding-top-4 sw-dms--color-grey-46">
+
+                  </div>
+
+                  <p class="sw--margin-bottom-0 sw--font-size-16 sw--font-size-16-mobile weight-light">
+                    Tutorials for beginners to start your 3D printing adventure</p>
+
                 </a>
-                <a href="/tutorials/getting-inspired/" class="btn-primary sw--margin-top-6" style="width:160px" data-sw-tracking="clicked" data-sw-tracking-link-type="getting-started-welcome" data-sw-tracking-target-section="tutorials" data-sw-tracking-link-id="position-5" data-sw-tracking-target-subsection="" data-sw-tracking-target-page-identifier="tutorials" data-sw-tracking-services="mixpanel">See Tutorials</a>
+
+                <a href="/tutorials/getting-inspired/" class="btn-primary sw--margin-top-6" style="width:160px" data-sw-tracking="clicked" data-sw-tracking-link-type="getting-started-welcome" data-sw-tracking-target-section="tutorials" data-sw-tracking-link-id="position-5" data-sw-tracking-target-subsection="" data-sw-tracking-target-page-identifier="tutorials" data-sw-tracking-services="mixpanel">
+                  See Tutorials</a>
+
               </div>
+
             </div>
+
           </div>
-    </div>
-   <!-- STATS -->
-      
-   <div id="sw-stats" class="sw-grid-full sw-international-numbers sw--hide-mobile sw--hide-tablet sw-background-image-auto-height sw--text-center sw--padding-top-7" style="">
-        <h2 class="sw--margin-bottom-7 sw--font-family-sharp-grotesque ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean m.</h2>
-        <div class="sw-grid-flex sw-grid-flex--wrap--mob" style="margin-top: 60px;">
-            <div class="sw-grid-flex__cell-1-3 sw-grid-flex__cell-1-1--mob" style="padding-left: 195px;">
-                <h2 class="sw--font-family-sharp-grotesque sw--font-size-42">6,000+</h2>
-                <div class="sw--text-gray">Lorem ipsum dolor sit amet,<br> consectetuer adipiscin</div>
-            </div>
-            <div class="sw-grid-flex__cell-1-3 sw-grid-flex__cell-1-1--mob">
-                <h2 class="sw--font-family-sharp-grotesque sw--font-size-42">45,000+</h2>
-                <div class="sw--text-gray">Stores run their businesses<br> with Shapeways</div>
-            </div>
-            <div class="sw-grid-flex__cell-1-3 sw-grid-flex__cell-1-1--mob" style="padding-right: 195px;">
-                <h2 class="sw--font-family-sharp-grotesque sw--font-size-42">130+</h2>
-                <div class="sw--text-gray">Countries Shipped to<br> globally</div>
-            </div>
-        </div>
-    </div>
-    <div class="sw-dms-section-panel--mob sw--padding-hor-7 sw-international-numbers--mob-tab sw-international-numbers--mob sw-international-numbers--tab sw--hide-desktop">
-        <h3 class="sw--margin-bottom-7 sw-international-numbers__header--mob sw-international-numbers__header--tab">Trusted by<br> entrepreneurs<br> around the world.</h3>
-        <div class="sw--margin-bottom-5 sw-international-numbers__metric-container--tab">
-            <h2 class="sw-international-numbers__metric--mob sw-international-numbers__metric--tab sw--font-family-sharp-grotesque sw--font-size-26">6,000+</h2>
-            <div class="sw--text-gray sw-international-numbers__subtext--tab">Products manufactured and<br> shipped everyday</div>
-        </div>
-        <div class="sw--margin-bottom-5 sw-international-numbers__metric-container--tab">
-            <h2 class="sw-international-numbers__metric--mob sw-international-numbers__metric--tab sw--font-family-sharp-grotesque sw--font-size-26">45,000+</h2>
-            <div class="sw--text-gray sw-international-numbers__subtext--tab">Stores run their businesses<br> with Shapeways</div>
-        </div>
-        <div class="sw-international-numbers__metric-container--tab">
-            <h2 class="sw-international-numbers__metric--mob sw-international-numbers__metric--tab sw--font-family-sharp-grotesque sw--font-size-26">130+</h2>
-            <div class="sw--text-gray sw-international-numbers__subtext--tab">Countries Shipped to<br> globally</div>
-        </div>
+
     </div>
 
+   <!-- STATS -->
+
+      
+   <div id="sw-stats" class="sw-grid-full sw-international-numbers sw--hide-mobile sw--hide-tablet sw-background-image-auto-height sw--text-center sw--padding-top-7" style="">
+
+        <h2 class="sw--margin-bottom-7 sw--font-family-sharp-grotesque ">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean m.</h2>
+
+        <div class="sw-grid-flex sw-grid-flex--wrap--mob" style="margin-top: 60px;">
+
+            <div class="sw-grid-flex__cell-1-3 sw-grid-flex__cell-1-1--mob" style="padding-left: 195px;">
+
+                <h2 class="sw--font-family-sharp-grotesque sw--font-size-42">
+                  6,000+</h2>
+
+                <div class="sw--text-gray">
+                  Lorem ipsum dolor sit amet,<br>
+                   consectetuer adipiscin</div>
+
+            </div>
+
+            <div class="sw-grid-flex__cell-1-3 sw-grid-flex__cell-1-1--mob">
+
+                <h2 class="sw--font-family-sharp-grotesque sw--font-size-42">
+                  45,000+</h2>
+
+                <div class="sw--text-gray">
+                  Stores run their businesses<br>
+                   with Shapeways</div>
+
+            </div>
+
+            <div class="sw-grid-flex__cell-1-3 sw-grid-flex__cell-1-1--mob" style="padding-right: 195px;">
+
+                <h2 class="sw--font-family-sharp-grotesque sw--font-size-42">
+                  130+</h2>
+
+                <div class="sw--text-gray">
+                  Countries Shipped to<br>
+                   globally</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="sw-dms-section-panel--mob sw--padding-hor-7 sw-international-numbers--mob-tab sw-international-numbers--mob sw-international-numbers--tab sw--hide-desktop">
+
+        <h3 class="sw--margin-bottom-7 sw-international-numbers__header--mob sw-international-numbers__header--tab">
+          Trusted by<br>
+           entrepreneurs<br>
+           around the world.</h3>
+
+        <div class="sw--margin-bottom-5 sw-international-numbers__metric-container--tab">
+
+            <h2 class="sw-international-numbers__metric--mob sw-international-numbers__metric--tab sw--font-family-sharp-grotesque sw--font-size-26">
+              6,000+</h2>
+
+            <div class="sw--text-gray sw-international-numbers__subtext--tab">
+              Products manufactured and<br>
+               shipped everyday</div>
+
+        </div>
+
+        <div class="sw--margin-bottom-5 sw-international-numbers__metric-container--tab">
+
+            <h2 class="sw-international-numbers__metric--mob sw-international-numbers__metric--tab sw--font-family-sharp-grotesque sw--font-size-26">
+              45,000+</h2>
+
+            <div class="sw--text-gray sw-international-numbers__subtext--tab">
+              Stores run their businesses<br>
+               with Shapeways</div>
+
+        </div>
+
+        <div class="sw-international-numbers__metric-container--tab">
+
+            <h2 class="sw-international-numbers__metric--mob sw-international-numbers__metric--tab sw--font-family-sharp-grotesque sw--font-size-26">
+              130+</h2>
+
+            <div class="sw--text-gray sw-international-numbers__subtext--tab">
+              Countries Shipped to<br>
+               globally</div>
+
+        </div>
+
+    </div>
+
+
   <!-- END STATS -->
+
  
   
  
   
-    <!-- CAROUSEL -->
-    <h2>Le tecnologie</h2>
-      <div data-sw-carousel="" data-sw-carousel-peek="0" class="sw--show-mobile"><button class="icon-chevron-thin-left sw--font-size-24 sw--show-mobile sw--circle sw-dms-homepage__holiday-button sw-dms-homepage__holiday-button--left-mob sw-dms-homepage__holiday-button--mob" style="padding-left: 0px; padding-right: 0px;"></button> <button class="icon-chevron-thin-right sw--font-size-24 sw--show-mobile sw--circle sw-dms-homepage__holiday-button sw-dms-homepage__holiday-button--right-mob sw-dms-homepage__holiday-button--mob" style="padding-left: 0px; padding-right: 0px;"></button> <section class="VueCarousel" data-sw-carousel-component=""><div class="VueCarousel-wrapper"><div role="listbox" class="VueCarousel-inner" style="transform: translate(0px, 0px); transition: transform 0.5s ease 0s; flex-basis: 0px; visibility: hidden; height: auto;"><div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel"><img src="../immagini/carbon3D.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4>
-                Get it by the Holidays! 
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Check our calendar to learn the final days to order for the holidays. 
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://springandwonder.shapeways.com/collections/signature" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="spring-wonder-personalized-jewelry" data-sw-tracking-target-section="spring &amp; wonder" data-sw-tracking-target-subsection="collections" data-sw-tracking-target-entity-id="signature" data-sw-tracking-target-page-identifier="Spring &amp; Wonder Signature Collection" data-sw-tracking-services="mixpanel"><img src="../immagini/automotive3D.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://springandwonder.shapeways.com/collections/signature" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="spring-wonder-personalized-jewelry" data-sw-tracking-target-section="spring &amp; wonder" data-sw-tracking-target-subsection="collections" data-sw-tracking-target-entity-id="signature" data-sw-tracking-target-page-identifier="Spring &amp; Wonder Signature Collection" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Personalized Jewelry
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Create your perfect piece of individualized jewelry.
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/trains" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="trains-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="trains" data-sw-tracking-target-page-identifier="trains" data-sw-tracking-services="mixpanel"><img src="../immagini/LaserE.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/trains" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="trains-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="trains" data-sw-tracking-target-page-identifier="trains" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Trains
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              From 1:64 scale to 1:450 find the train you can’t find anywhere else.
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/scifi/" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="scifi-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="scifi" data-sw-tracking-services="mixpanel"><img src="../immagini/anelli.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/scifi/" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="scifi-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="scifi" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Scifi
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Expanding your universe and collection was never this much fun. 
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/vehicles" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="vehicle-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="vehicles" data-sw-tracking-services="mixpanel"><img src="../immagini/cnc.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/vehicles" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="vehicle-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="vehicles" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Vehicles
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              From racecars to military tanks and everything in between.
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/figurines" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="figurines-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="figurines" data-sw-tracking-services="mixpanel"><img src="../immagini/fdm.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/figurines" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="figurines-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="figurines" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Figurines
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Browse and shop the coolest collection of figures around.
-            </p></div></div></div></div></div> <!----> <!----></section></div>
-  
-    <div data-sw-carousel="" data-sw-carousel-peek="0" class="sw--hide-mobile" style="position: relative;"><button class="icon-chevron-thin-left sw--font-size-36 sw--hide-mobile sw--circle sw-dms-homepage__holiday-button sw-dms-homepage__holiday-button--left"></button> <button class="icon-chevron-thin-right sw--font-size-36 sw--hide-mobile sw--circle sw-dms-homepage__holiday-button sw-dms-homepage__holiday-button--right"></button> <section class="VueCarousel" data-sw-carousel-component=""><div class="VueCarousel-wrapper"><div role="listbox" class="VueCarousel-inner" style="transform: translate(0px, 0px); transition: transform 0.5s ease 0s; flex-basis: 354.5px; visibility: visible; height: auto;"><div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel"><img src="../immagini/robot.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4>
-                Get it by the Holidays! 
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Check our calendar to learn the final days to order for the holidays. 
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://springandwonder.shapeways.com/collections/signature" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="spring-wonder-personalized-jewelry" data-sw-tracking-target-section="spring &amp; wonder" data-sw-tracking-target-subsection="collections" data-sw-tracking-target-entity-id="signature" data-sw-tracking-target-page-identifier="Spring &amp; Wonder Signature Collection" data-sw-tracking-services="mixpanel"><img src="../immagini/sorting-miniature-prints.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://springandwonder.shapeways.com/collections/signature" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="spring-wonder-personalized-jewelry" data-sw-tracking-target-section="spring &amp; wonder" data-sw-tracking-target-subsection="collections" data-sw-tracking-target-entity-id="signature" data-sw-tracking-target-page-identifier="Spring &amp; Wonder Signature Collection" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Personalized Jewelry
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Create your perfect piece of individualized jewelry.
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/trains" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="trains-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="trains" data-sw-tracking-target-page-identifier="trains" data-sw-tracking-services="mixpanel"><img src="../immagini/laser.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/trains" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="trains-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="trains" data-sw-tracking-target-page-identifier="trains" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Trains
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              From 1:64 scale to 1:450 find the train you can’t find anywhere else.
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/scifi/" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="scifi-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="scifi" data-sw-tracking-services="mixpanel"><img src="../immagini/LaserE.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/scifi/" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="scifi-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="scifi" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Scifi
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Expanding your universe and collection was never this much fun. 
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/vehicles" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="vehicle-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="vehicles" data-sw-tracking-services="mixpanel"><img src="..//immagini/automotive3D.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/vehicles" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="vehicle-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="vehicles" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Vehicles
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              From racecars to military tanks and everything in between.
-            </p></div></div></div> <div tabindex="-1" class="VueCarousel-slide carousel-slide-mf" style="padding-right: 0px; margin-left: 0px;"><div class="sw--padding-hor-3" style="margin-top: 60px;"><div class="sw-grid-flex__cell-1-1"><a href="https://www.shapeways.com/marketplace/miniatures/figurines" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="figurines-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="figurines" data-sw-tracking-services="mixpanel"><img src="../immagini/robot.jpg" class="sw--full-width-img sw--box-shadow-2"></a></div> <div class="sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);"><a href="https://www.shapeways.com/marketplace/miniatures/figurines" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="figurines-category" data-sw-tracking-target-section="marketplace" data-sw-tracking-target-subsection="miniatures" data-sw-tracking-target-entity-id="figurines" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark"><h4 class="sw--font-size-12--mob">
-                Figurines
-              </h4></a> <p class="sw--font-size-14 sw--font-size-12--mob">
-              Browse and shop the coolest collection of figures around.
-            </p></div></div></div></div></div> <!----> <!----></section></div>
-  </div>
-  
-    <!-- END CAROUSEL -->
+    
+<!--nuovo carousel-->
+<div><h2>
+    Le tecnologie</h2></div>
+    
+
+
+  <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="carousel slide multi-item-carousel" id="theCarousel">
+            <div class="carousel-inner">
+              
+              <!-- add  more items here -->
+              <div class="item active sw--padding-hor-3" style="margin-top: 60px;">
+                  <div class="col-xs-4">
+                    <div class=" sw-grid-flex__cell-1-1">
+                      
+                      <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel">
+                        
+                        <img src="../immagini/robot.jpg" class="img-responsive sw--full-width-img sw--box-shadow-2">
+                        
+                      </a>
+                      
+                    </div>
+                    
+                      <div class=" sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);">
+                        
+                        <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark">
+                          <h4>
+                          
+                            Get it by the Holidays! 
+                          </h4>
+                        </a>
+                      
+                        <p class="sw--font-size-14 sw--font-size-12--mob">
+                            
+                          Check our calendar to learn the final days to order for the holidays. 
+                        </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="item sw--padding-hor-3" style="margin-top: 60px;">
+                  <div class="col-xs-4">
+                    <div class=" sw-grid-flex__cell-1-1">
+                      
+                      <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel">
+                        
+                        <img src="../immagini/robot.jpg" class="img-responsive sw--full-width-img sw--box-shadow-2">
+                        
+                      </a>
+                      
+                    </div>
+                    
+                      <div class=" sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);">
+                        
+                        <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark">
+                          <h4>
+                          
+                            Get it by the Holidays! 
+                          </h4>
+                        </a>
+                      
+                        <p class="sw--font-size-14 sw--font-size-12--mob">
+                            
+                          Check our calendar to learn the final days to order for the holidays. 
+                        </p>
+                    </div>
+                  </div>
+              </div>
+              <!-- -->
+              <div class="item sw--padding-hor-3" style="margin-top: 60px;">
+                  <div class="col-xs-4">
+                    <div class=" sw-grid-flex__cell-1-1">
+                      
+                      <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel">
+                        
+                        <img src="../immagini/robot.jpg" class="img-responsive sw--full-width-img sw--box-shadow-2">
+                        
+                      </a>
+                      
+                    </div>
+                    
+                      <div class=" sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);">
+                        
+                        <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark">
+                          <h4>
+                          
+                            Get it by the Holidays! 
+                          </h4>
+                        </a>
+                      
+                        <p class="sw--font-size-14 sw--font-size-12--mob">
+                            
+                          Check our calendar to learn the final days to order for the holidays. 
+                        </p>
+                    </div>
+                  </div>
+              </div>
+              <!-- -->
+              <div class="item sw--padding-hor-3" style="margin-top: 60px;">
+                  <div class="col-xs-4">
+                    <div class=" sw-grid-flex__cell-1-1">
+                      
+                      <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel">
+                        
+                        <img src="../immagini/robot.jpg" class="img-responsive sw--full-width-img sw--box-shadow-2">
+                        
+                      </a>
+                      
+                    </div>
+                    
+                      <div class=" sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);">
+                        
+                        <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark">
+                          <h4>
+                          
+                            Get it by the Holidays! 
+                          </h4>
+                        </a>
+                      
+                        <p class="sw--font-size-14 sw--font-size-12--mob">
+                            
+                          Check our calendar to learn the final days to order for the holidays. 
+                        </p>
+                    </div>
+                  </div>
+              </div>
+                        <!-- -->
+    
+              <div class="item sw--padding-hor-3" style="margin-top: 60px;">
+                  <div class="col-xs-4">
+                    <div class=" sw-grid-flex__cell-1-1">
+                      
+                      <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel">
+                        
+                        <img src="../immagini/robot.jpg" class="img-responsive sw--full-width-img sw--box-shadow-2">
+                        
+                      </a>
+                      
+                    </div>
+                    
+                      <div class=" sw--text-center sw--margin-left-auto sw--margin-right-auto sw-dms-homepage__holiday-box-caption sw--border-bottom-black-5 sw-dms--bg-white text-center sw--padding-top-7 sw--padding-hor-7 sw--z-index-10 sw--position-relative" style="padding: 10% 3% 5%; border-bottom: 5px solid rgb(218, 216, 218);">
+                        
+                        <a href="https://www.shapeways.com/holiday/planning" data-sw-tracking="clicked" data-sw-tracking-link-type="homepage-carousel-item" data-sw-tracking-link-id="cutoff-date-module" data-sw-tracking-target-section="/holiday/planning" data-sw-tracking-services="mixpanel" class="sw-dms--text-dark">
+                          <h4>
+                          
+                            Get it by the Holidays! 
+                          </h4>
+                        </a>
+                      
+                        <p class="sw--font-size-14 sw--font-size-12--mob">
+                            
+                          Check our calendar to learn the final days to order for the holidays. 
+                        </p>
+                    </div>
+                  </div>
+              </div>
+              <!-- Example item start:  
+              
+              <div class="item">
+                <div class="col-xs-4"><a href="#1"><img src="http://placehold.it/300/8bc34a/000000" class="img-responsive"></a></div>
+              </div>
+              
+               Example item end -->
+            </div>
+            
+            <a class="left carousel-control" href="#theCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#theCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    
+      
+    
+        <script  src="../slider/js/index.js"></script>
+    
+    
+    
+    
+    
+
   
     <!-- END MARKETING MODULES -->
+
   
   
    <!-- teconlogie e news-->
+
     <div class="row">
+
         <!--
             <div class="side">
-            <h2>Le tecnologie</h2>
-            <h3>Stampa 3D a filamento</h3>
+
+            <h2>
+              Le tecnologie</h2>
+
+            <h3>
+              Stampa 3D a filamento</h3>
+
             <img src="../immagini/fdm.jpg" alt="foto fdm" class="responsive" height="200">
-            <p>Per la realizzazione (in plastica: PLA, ABS, Nylon, Ibridi vari) di prototipi
+
+            <p>
+              Per la realizzazione (in plastica: PLA, ABS, Nylon, Ibridi vari) di prototipi
                 o di prodotti finiti, come box, cosplay, oggetti di design.</p>
-            <h3>Stampa 3D a resina</h3>
+
+            <h3>
+              Stampa 3D a resina</h3>
+
             <img src="../immagini/anelli.jpg" alt="foto resina" class="responsive" height="200">
-            <p>Usata soprattutto in gioielleria e nel dentale grazie all'altissima risoluzione
+
+            <p>
+              Usata soprattutto in gioielleria e nel dentale grazie all'altissima risoluzione
                 ed alla disponibilit� di resine castabili.</p>
-            <h3>Lavori con CNC</h3>
+
+            <h3>
+              Lavori con CNC</h3>
+
             <img src="../immagini/cnc.jpg" alt="foto cnc" class="responsive" height="200">
-            <p>Per la foratura, incisione, fresatura di legno, metalli e pietre, mediante
+
+            <p>
+              Per la foratura, incisione, fresatura di legno, metalli e pietre, mediante
                 macchine a controllo numerico che permettono lavori di precisione partendo da un file CAD.</p>
-            <h3>Lavori con il Laser</h3>
+
+            <h3>
+              Lavori con il Laser</h3>
+
             <img src="../immagini/laser.jpg" alt="foto laser" class="responsive" height="200">
-            <p>Per il taglio e l'incisione di legno, plastica ed altri materiale morbidi.
+
+            <p>
+              Per il taglio e l'incisione di legno, plastica ed altri materiale morbidi.
                 Per la realizzazione di foto su legno e di circuiti stampati. Sempre a controllo numerico.</p>
+
         </div>
+
         -->
 
+
         <div class="main">
-            <h4>Ultime news dal settore maker</h4>
-            <h2>Costruirsi i robot con un kit</h2>
-            <h5>27 Novembre 2018</h5>
+
+            <h4>
+              Ultime news dal settore maker</h4>
+
+            <h2>
+              Costruirsi i robot con un kit</h2>
+
+            <h5>
+              27 Novembre 2018</h5>
+
             <img src="../immagini/robot.jpg" alt="foto robot" class="responsive" height="300">
-            <p>La creazione semplice ed economica di robot, fino a 4 assi e 4 gradi di libert�,
+
+            <p>
+              La creazione semplice ed economica di robot, fino a 4 assi e 4 gradi di libert�,
                 � oggi alla portata di qualsiasi progettista e applicazione.</p>
-            <p>RS Components, distributore globale di prodotti di elettronica e manutenzione, ha presentato due nuovi
+
+            <p>
+              RS Components, distributore globale di prodotti di elettronica e manutenzione, ha presentato due nuovi
                 kit
                 che comprendono tutti i componenti per la costruzione di un braccio completamente robotizzato a 4 assi.</p>
+
             <br>
 
-            <h2>Automotive, stampa 3D in crescita per cinque anni</h2>
-            <h5>7 Novembre 2018</h5>
+
+            <h2>
+              Automotive, stampa 3D in crescita per cinque anni</h2>
+
+            <h5>
+              7 Novembre 2018</h5>
+
             <img src="../immagini/automotive3D.jpg" alt="foto automotive 3D" class="responsive" height="500">
-            <p>Causa della crescita � l'aumento della necessit� del settore automotive di produrre progetti
+
+            <p>
+              Causa della crescita � l'aumento della necessit� del settore automotive di produrre progetti
                 complessi in un breve lasso di tempo e la necessit� di utilizzare in modo efficiente le risorse.</p>
-            <p>Inoltre, la capacit� delle stampanti 3D di produrre parti personalizzate con precisione, meno costi e
+
+            <p>
+              Inoltre, la capacit� delle stampanti 3D di produrre parti personalizzate con precisione, meno costi e
                 tempi ridotto e
                 l'alta risoluzione del prodotto finito completano la crescita del mercato automotive. Tuttavia, l'alto
                 costo
                 di stampa e l'indisponibilit� di manodopera qualificata ostacolano la crescita del settore.</p>
+
         </div>
+
     </div>
+
     
     <div class="footer">
-        <h2>Footer</h2>
+
+        <h2>
+          Footer</h2>
+
     </div>
-<!-- script slick-->
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script>
-$(document).ready(function(){
-    $('.your-class').slick({
-      setting-name: setting-value
-    });
-  });</script>
+
+
 </body>
+
 
 </html>
