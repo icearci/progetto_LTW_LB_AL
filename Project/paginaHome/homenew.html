@@ -7,6 +7,12 @@ spiegare il funzionamento del file
 <head>
     <title>Printable Of Things</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    // Add the new slick-theme.css if you want the default styling
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<!--fine slick-->
+
      <!--tutorial e get started-->
     <link rel="stylesheet" type="text/css" href="https://static1.sw-cdn.net/rrstatic/stylesheets/screen.css?tag=g71Gt1LzkNjmlQat">
      <!--responsive-->
@@ -527,7 +533,16 @@ spiegare il funzionamento del file
     <div class="footer">
         <h2>Footer</h2>
     </div>
-
+<!-- script slick-->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.your-class').slick({
+      setting-name: setting-value
+    });
+  });</script>
 </body>
 
 </html>
