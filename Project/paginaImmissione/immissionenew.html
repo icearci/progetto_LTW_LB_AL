@@ -203,18 +203,13 @@ Taglierina laser: <SELECT NAME="lasertipo">
                 </div>
             </label>
         </div>-->
-        
+        <!--Printer Informations-->
         <div class="col-group col-sm-6">
                 <h1>Printer Informations</h1>
-                <!--Stampante 3D: <SELECT NAME="stampantetipo">
-                        <OPTION>Professionale
-                        <OPTION>Semipro
-                        <OPTION>Amatoriale
-                        <OPTION>Nessuna    
-                        </SELECT>-->
+                
                 <span class="input-desc req">Which one of these applies to you?</span>
                 <label class="control control--radio">
-                    <input type="radio" name="stampantetipo" checked="checked"/>
+                    <input type="radio" name="stampantetipo" />
                     <span class="control--label">Professionale</span>
                     <div class="control--indicator"></div>
                     <div class="control--fill"></div>
@@ -245,7 +240,7 @@ Taglierina laser: <SELECT NAME="lasertipo">
                         </div>
                     </label>
                     <label class="control control--radio">
-                            <input type="radio" name="stampantetipo"/>
+                            <input type="radio" name="stampantetipo" checked="checked"/>
                             <span class="control--label">Nessuna</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -256,13 +251,13 @@ Taglierina laser: <SELECT NAME="lasertipo">
                         </label>
                 
          </div>
-            
+        <!--laser-->  
         <div class="col-group col-sm-6">
                 <h1> Laser cutter Informations</h1>
                 <span class="input-desc req">Which one of these applies to you?</span>
                 <label class="control control--radio">
-                    <input type="radio" name="lasertipo" checked="checked"/>
-                    <span class="control--label">Professionale</span>
+                    <input type="radio" name="lasertipo" />
+                    <span class="control--label">Legni e Plastiche</span>
                     <div class="control--indicator"></div>
                     <div class="control--fill"></div>
                     <div class="help"></div>
@@ -273,7 +268,7 @@ Taglierina laser: <SELECT NAME="lasertipo">
                 
                 <label class="control control--radio">
                     <input type="radio" name="lasertipo"/>
-                    <span class="control--label">Semipro</span>
+                    <span class="control--label">Plexiglass e simili</span>
                     <div class="control--indicator"></div>
                     <div class="control--fill"></div>
                     <div class="help"></div>
@@ -283,7 +278,7 @@ Taglierina laser: <SELECT NAME="lasertipo">
                 </label>
                 <label class="control control--radio">
                         <input type="radio" name="lasertipo"/>
-                        <span class="control--label">Amatoriale</span>
+                        <span class="control--label">Metalli e Vetro</span>
                         <div class="control--indicator"></div>
                         <div class="control--fill"></div>
                         <div class="help"></div>
@@ -292,7 +287,7 @@ Taglierina laser: <SELECT NAME="lasertipo">
                         </div>
                     </label>
                     <label class="control control--radio">
-                            <input type="radio" name="lasertipo"/>
+                            <input type="radio" name="lasertipo"checked="checked"/>
                             <span class="control--label">Nessuna</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -303,52 +298,174 @@ Taglierina laser: <SELECT NAME="lasertipo">
                         </label>
                 
             </div>
+        <!--cnc-->
+        <div class="col-group col-sm-6">
+                    <h1>CNC Informations</h1>
+                    <span class="input-desc req">Which one of these applies to you?</span>
+                    <label class="control control--radio">
+                        <input type="radio" name="cnc" />
+                        <span class="control--label">Legni morbidi</span>
+                        <div class="control--indicator"></div>
+                        <div class="control--fill"></div>
+                        <div class="help"></div>
+                            <div class="help--tooltip">
+                                Cras blandit ex eu pharetra rutrum. Maecenas placerat lectus eu magna congue, sed mattis metus egestas. Vivamus viverra dictum risus in ornare. Integer sed massa eros. Mauris ex enim, suscipit at nulla quis, consectetur finibus lorem. Phasellus non sem orci. Cras lacinia lorem eu massa congue, vel vehicula ipsum hendrerit.
+                            </div>
+                    </label>
+                    
+                    <label class="control control--radio">
+                        <input type="radio" name="cnc"/>
+                        <span class="control--label">Legni duri</span>
+                        <div class="control--indicator"></div>
+                        <div class="control--fill"></div>
+                        <div class="help"></div>
+                        <div class="help--tooltip">
+                            Cras blandit ex eu pharetra rutrum. Maecenas placerat lectus eu magna congue, sed mattis metus egestas. Vivamus viverra dictum risus in ornare. Integer sed massa eros. Mauris ex enim, suscipit at nulla quis, consectetur finibus lorem. Phasellus non sem orci. Cras lacinia lorem eu massa congue, vel vehicula ipsum hendrerit.
+                        </div>
+                    </label>
+                    <label class="control control--radio">
+                            <input type="radio" name="cnc"/>
+                            <span class="control--label">Alluminio</span>
+                            <div class="control--indicator"></div>
+                            <div class="control--fill"></div>
+                            <div class="help"></div>
+                            <div class="help--tooltip">
+                                Cras blandit ex eu pharetra rutrum. Maecenas placerat lectus eu magna congue, sed mattis metus egestas. Vivamus viverra dictum risus in ornare. Integer sed massa eros. Mauris ex enim, suscipit at nulla quis, consectetur finibus lorem. Phasellus non sem orci. Cras lacinia lorem eu massa congue, vel vehicula ipsum hendrerit.
+                            </div>
+                        </label>
+                        <label class="control control--radio">
+                            <input type="radio" name="cnc"/>
+                            <span class="control--label">Metalli</span>
+                            <div class="control--indicator"></div>
+                            <div class="control--fill"></div>
+                            <div class="help"></div>
+                            <div class="help--tooltip">
+                                Cras blandit ex eu pharetra rutrum. Maecenas placerat lectus eu magna congue, sed mattis metus egestas. Vivamus viverra dictum risus in ornare. Integer sed massa eros. Mauris ex enim, suscipit at nulla quis, consectetur finibus lorem. Phasellus non sem orci. Cras lacinia lorem eu massa congue, vel vehicula ipsum hendrerit.
+                            </div>
+                        </label>
+                        <label class="control control--radio">
+                                <input type="radio" name="cnc" checked="checked"/>
+                                <span class="control--label">Nessuna</span>
+                                <div class="control--indicator"></div>
+                                <div class="control--fill"></div>
+                                <div class="help"></div>
+                                <div class="help--tooltip">
+                                    Cras blandit ex eu pharetra rutrum. Maecenas placerat lectus eu magna congue, sed mattis metus egestas. Vivamus viverra dictum risus in ornare. Integer sed massa eros. Mauris ex enim, suscipit at nulla quis, consectetur finibus lorem. Phasellus non sem orci. Cras lacinia lorem eu massa congue, vel vehicula ipsum hendrerit.
+                                </div>
+                            </label>
+                    
+                </div>
+        <!--info stampante-->
+        <div class="col-group col-sm-6">
+                    <h1>Info Stampante</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="input-desc req">Printer Name</span>
+                            <label class="text-data">
+                                <input type="text"/ placeholder="Axghs-345">
+                            </label>
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="input-desc">Printer ID Code</span>
+                            <label class="text-data">
+                                <input type="text" class="text-data--phone"/>
+                            </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                            <span class="input-desc req">Price per Hour</span>
+                            <label class="text-data">
+                                <input type="number" class="text-data-"/>
+                                <div class="help"></div>
+                                <div class="help--tooltip">
+                                Donec elementum elit hendrerit pellentesque condimentum. Sed et est eu lectus ornare aliquet. Aliquam facilisis purus vel tempor lobortis. Nam ut lacinia orci. Aenean enim arcu, ornare ac ex in, aliquam mattis ipsum. Curabitur volutpat magna at mauris bibendum, vitae laoreet tellus condimentum. Proin ornare.
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+        
     </div>
     <!--info stampante-->
+    <h1>Logistics</h1>
     <div class="row">
-        <div class="col-group col-sm-12">
-            <h1>Info Stampante</h1>
-            <div class="row">
-                <div class="col-sm-6">
-                    <span class="input-desc req">Printer Name</span>
-                    <label class="text-data">
-                        <input type="text"/ placeholder="Axghs-345">
-                    </label>
-                </div>
-                <div class="col-sm-6">
-                    <span class="input-desc">CNC</span>
-                    <label class="text-data">
-                        <input type="text"/ placeholder="CNC">
-                        <div class="help"></div>
-                        <div class="help--tooltip">
-                            Praesent lacinia risus lacinia est vestibulum dapibus. Suspendisse condimentum dui eget blandit luctus. Vivamus vulputate condimentum eros eu efficitur. Quisque ac risus iaculis, porttitor erat vel, faucibus erat. Morbi congue, mauris nec accumsan finibus, tellus sem feugiat turpis, sit amet viverra dolor eros vel sapien.
-                        </div>
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6">
-                    <span class="input-desc">Printer ID Code</span>
-                    <label class="text-data">
-                        <input type="text" class="text-data--phone"/>
-                    </label>
-                </div>
-                <div class="col-sm-6">
-                    <span class="input-desc req">Price per Hour</span>
-                    <label class="text-data">
-                        <input type="number" class="text-data-"/>
-                        <div class="help"></div>
-                        <div class="help--tooltip">
-                        Donec elementum elit hendrerit pellentesque condimentum. Sed et est eu lectus ornare aliquet. Aliquam facilisis purus vel tempor lobortis. Nam ut lacinia orci. Aenean enim arcu, ornare ac ex in, aliquam mattis ipsum. Curabitur volutpat magna at mauris bibendum, vitae laoreet tellus condimentum. Proin ornare.
-                        </div>
-                    </label>
-                </div>
-            </div>
+        <div class="col-group col-sm-6">
             
-            </div>
-            
+            <span class="input-desc req">Spedizione</span>
+            <label class="control control--checkbox">
+                <input type="checkbox" />
+                <span class="control--label">in Italia</span>
+                <div class="control--indicator"></div>
+                <div class="control--fill"></div>
+                <div class="help"></div>
+                <div class="help--tooltip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                </div>
+            </label>
+            <label class="control control--checkbox">
+                <input type="checkbox" />
+                <span class="control--label">Internazionale</span>
+                <div class="control--indicator"></div>
+                <div class="control--fill"></div>
+                <div class="help"></div>
+                <div class="help--tooltip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                </div>
+            </label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked"/>
+                <span class="control--label">No</span>
+                <div class="control--indicator"></div>
+                <div class="control--fill"></div>
+                <div class="help"></div>
+                <div class="help--tooltip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                </div>
+            </label>
         </div>
-    
+        <div class="col-group col-sm-6">
+            <span class="input-desc ">Consegna a Mano</span>
+            <label class="control control--checkbox">
+                <input type="checkbox" />
+                <span class="control--label">in città</span>
+                <div class="control--indicator"></div>
+                <div class="control--fill"></div>
+                <div class="help"></div>
+                <div class="help--tooltip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                </div>
+                
+            </label>
+            <label class="control control--checkbox">
+                <input type="checkbox" />
+                <span class="control--label">nella zona</span>
+                <div class="control--indicator"></div>
+                <div class="control--fill"></div>
+                <div class="help"></div>
+                <div class="help--tooltip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                </div>
+                
+            </label>
+            <label class="control control--checkbox">
+                <input type="checkbox" checked="checked"/>
+                <span class="control--label">No</span>
+                <div class="control--indicator"></div>
+                <div class="control--fill"></div>
+                <div class="help"></div>
+                <div class="help--tooltip">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                </div>
+            </label>
+            
+      </div>
+    </div>
     <!--buttons-->
     <div class="row right" >
             <div class="col-group col-sm-12">
