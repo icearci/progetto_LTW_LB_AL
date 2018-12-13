@@ -13,7 +13,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  color: #333;
+  color: #fff;
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 
 .row {
   width: 100%;
-  max-width: 1170px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0;
   clear: both;
@@ -144,10 +144,18 @@ header p {
 }
 .port img {
   width: 50%;
+  
 }
 .port .description {
   float: left;
   width: 50%;
+  max-height: 100%;
+  padding: 0 40px 40px;
+  overflow: auto;
+}
+.port .description_{
+ 
+  width: 99.99%;
   max-height: 100%;
   padding: 0 40px 40px;
   overflow: auto;
