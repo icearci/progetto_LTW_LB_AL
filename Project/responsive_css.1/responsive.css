@@ -54,7 +54,7 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active {
+.active_ {
   background-color: #717171;
 }
 
@@ -86,7 +86,7 @@ img {vertical-align: middle;}
 /* Barra di navigazione sticky "appiccicosa": consente di spostarsi tra relativo e fisso, in base alla posizione di scorrimento.
 Viene posizionato relativo fino a quando una determinata posizione di offset viene soddisfatta nel viewport, quindi "si attacca" in posizione (come posizione: fissa).
 Il valore sticky non � supportato in IE o Edge 15 e nelle versioni precedenti. Tuttavia, per queste versioni la barra di navigazione erediter� la posizione di default * / */
-.navbar {
+.navbar_ {
     overflow: hidden;
     background-color: #333;
     position: sticky;
@@ -95,7 +95,7 @@ Il valore sticky non � supportato in IE o Edge 15 e nelle versioni precedenti.
 }
 
 /* Crea lo stile dei collegamenti della barra di navigazione */
-.navbar a {
+.navbar_ a {
     float: left;
     display: block;
     color: white;
@@ -105,18 +105,18 @@ Il valore sticky non � supportato in IE o Edge 15 e nelle versioni precedenti.
 }
 
 /* link allineato a destra */
-.navbar a.right {
+.navbar_ a.right {
     float: right;
 }
 
 /* cambia colore quando passa sopra (hover)) */
-.navbar a:hover {
+.navbar_ a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* link attivo (home) */
-.navbar a.active {
+.navbar_ a.active_ {
     background-color: red;
     color: white;
 }
@@ -164,7 +164,7 @@ le due colonne si sovrappongano l'una sull'altra anzich� stare una accanto all
 /* Responsive layout - quando lo schermo � largo meno di 400 px, posiziona i link 
 di navigazione uno sopra l'altro invece che uno accanto all'altro */
 @media screen and (max-width: 400px) {
-    .navbar a {
+    .navbar_ a {
         float: none;
         width: 100%;
     }
