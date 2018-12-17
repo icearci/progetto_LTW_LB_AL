@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
     <link href="../responsive_css/responsive.css" rel="stylesheet" />
 
-    <!--dashboard-->
-    <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
-    <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.7/chartist.min.css'>
-    <link rel='stylesheet' href='http://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.4/jquery-jvectormap.min.css'>
-    
-          <link rel="stylesheet" href="dashboard/css/style.css">
+   <!--profile-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700'>
+ <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css'>
+ <link href="profile/css/style.css" rel="stylesheet" />
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+ 
     <!--balkan-->  
     
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
@@ -30,6 +31,11 @@
   
   
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+  <!--review-->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  
+        <link rel="stylesheet" href="review/css/style.css">
   
 </head>
 <body>
@@ -61,159 +67,47 @@
  <!--END nav bar-->
     <!-- //////////////////////////////////////////////////////////////////////////// -->
 
-<!-- START MAIN -->
-<div id="main">
-        <!-- START WRAPPER -->
-        <div class="wrapper">
+<!--profile -->
+<div class="profile">
+        <figure>
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/55758/random-user-31.jpg" alt="" />
+        </figure>
+        <header>
+          <h1>Maria Gonzalez
+            <small>In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia, vivono i testi casuali. Vivono isolati nella cittadina di Lettere, sulle coste del Semantico, un immenso oceano linguistico. Un piccolo ruscello chiamato Devoto Oli attraversa quei luoghi, rifornendoli di tutte le regolalie di cui hanno</small></h1>
+        </header>
+        
+        <div class="toggle">
+          <input type="checkbox" class="view_details" id="view_details">
+          <label for="view_details" title="tap here to view full profile">=</label>    
+        </div>
+        <main>
+          <dl>
+            <dt>Full name</dt>
+              <dd>Maria Josephina Gonzalez</dd>
+            <dt>Date of birth</dt>
+              <dd>August 27, 1987</dd>
+            <dt>Hometown</dt>
+              <dd>Barcelona, Spain</dd>
+            <dt>Occupation</dt>
+              <dd>Client Happiness Manager</dd>
+            <dt>Loves</dt>
+              <dd>Skydiving, Tennis, Romantic dinners</dd>
+            <dt>Hates</dt>
+              <dd>Taxes, bosses instead of leaders</dd>
+            <dt>Social</dt>
+              <dd>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a> 
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+              </dd>
+          </dl>
+        </main>
       
-         
-          <!-- //////////////////////////////////////////////////////////////////////////// -->
-      
-          <!-- START CONTENT -->
-          <section id="content">
-            <div class="row">
-      
-              <div class="col s4">
-                <!-- Promo Content 1 goes here -->
-              
-              </div>
-              <div class="col s4">
-                <!-- Promo Content 2 goes here -->
-               
-              </div>
-              <div class="col s4">
-                <!-- Promo Content 3 goes here -->
-              </div>
-      
-            </div>
-            <!--start container-->
-            <div class="container">
-              <!-- //////////////////////////////////////////////////////////////////////////// -->
-              <div id="work-collections">
-                <div class="row">
-                  <div class="col s12 m6 l4">
-                    <div id="profile-card" class="card">
-                      <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="http://demo.geekslabs.com/materialize/v2.1/layout03/images/user-bg.jpg" alt="user background">
-                      </div>
-                      <div class="card-content">
-                        <img src="http://demo.geekslabs.com/materialize/v2.1/layout03/images/avatar.jpg" alt="" class="circle responsive-img activator card-profile-image">
-                        <a class="btn-floating activator btn-move-up waves-effect waves-light darken-2 right">
-                          <i class="mdi-action-account-circle"></i>
-                        </a>
-      
-                        <span class="card-title activator grey-text text-darken-4">Roger Waters</span>
-                        <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Project Manager</p>
-                        <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +1 (612) 222 8989</p>
-                        <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com</p>
-      
-                      </div>
-                      <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Roger Waters <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this card.</p>
-                        <p><i class="mdi-action-perm-identity cyan-text text-darken-2"></i> Project Manager</p>
-                        <p><i class="mdi-action-perm-phone-msg cyan-text text-darken-2"></i> +1 (612) 222 8989</p>
-                        <p><i class="mdi-communication-email cyan-text text-darken-2"></i> mail@domain.com</p>
-                        <p><i class="mdi-social-cake cyan-text text-darken-2"></i> 18th June 1990</p>
-                        <p><i class="mdi-device-airplanemode-on cyan-text text-darken-2"></i> BAR - AUS</p>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <div class="col s12 m12 l8">
-                    <ul id="projects-collection" class="collection">
-                      <li class="collection-item avatar">
-                        <i class="mdi-file-folder circle light-blue darken-2"></i>
-                        <span class="collection-header">Field1 (name)</span>
-                        <p>Your Favorites</p>
-                        <a href="#" class="secondary-content"><i class="mdi-action-grade"></i></a>
-                      </li>
-                      <li class="collection-item">
-                        <div class="row">
-                          <div class="col s6">
-                            <p class="collections-title">Web App</p>
-                            <p class="collections-content">AEC Company</p>
-                          </div>
-                          <div class="col s3">
-                            <span class="task-cat cyan">Development</span>
-                          </div>
-                          <div class="col s3">
-                            <div id="project-line-1"><canvas width="135" height="30" style="display: inline-block; width: 135px; height: 30px; vertical-align: top;"></canvas></div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="collection-item">
-                        <div class="row">
-                          <div class="col s6">
-                            <p class="collections-title">Mobile App for Social</p>
-                            <p class="collections-content">iSocial App</p>
-                          </div>
-                          <div class="col s3">
-                            <span class="task-cat grey darken-3">UI/UX</span>
-                          </div>
-                          <div class="col s3">
-                            <div id="project-line-2"><canvas width="135" height="30" style="display: inline-block; width: 135px; height: 30px; vertical-align: top;"></canvas></div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="collection-item">
-                        <div class="row">
-                          <div class="col s6">
-                            <p class="collections-title">Website</p>
-                            <p class="collections-content">MediTab</p>
-                          </div>
-                          <div class="col s3">
-                            <span class="task-cat teal">Marketing</span>
-                          </div>
-                          <div class="col s3">
-                            <div id="project-line-3"><canvas width="135" height="30" style="display: inline-block; width: 135px; height: 30px; vertical-align: top;"></canvas></div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="collection-item">
-                        <div class="row">
-                          <div class="col s6">
-                            <p class="collections-title">AdWord campaign</p>
-                            <p class="collections-content">True Line</p>
-                          </div>
-                          <div class="col s3">
-                            <span class="task-cat green">SEO</span>
-                          </div>
-                          <div class="col s3">
-                            <div id="project-line-4"><canvas width="135" height="30" style="display: inline-block; width: 135px; height: 30px; vertical-align: top;"></canvas></div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-      
-                </div>
-              </div>
-              <!--work collections end-->
-      
-              
-              
-            </div>
-            <!--end container-->
-            <!--card widgets start-->
-              
-          </section>
-          <!-- END CONTENT -->
-      
-          <!-- //////////////////////////////////////////////////////////////////////////// -->
-      
-         
-          </div>
-          <!-- END WRAPPER -->
-      
-          </div>
-          <!-- END MAIN -->
-      
-      
+      </div> <!-- end profile -->
           <!-- //////////////////////////////////////////////////////////////////////////// -->
       <!--balkan portfolio-->
           <div id="top">
-            
+            <h1>le mie stampanti</h1>
           </div>
           <section class="gallery">
               <div class="row">
@@ -271,9 +165,20 @@
               
                   <div class="row">
                       <div class="description">
-                          <h1>Item 01</h1>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
-                      </div>
+                          <h1>Zmorph 2.0 </h1>
+                          <p>
+                                la Zmorph 2.0 è una stampante sempiprofessionale <br>
+                                ha un piatto di stampa di 20x24x16cm  (larghezza, lunghezza, altezza) <br>
+                                è dotata di piatto riscaldato e di coperture esterne che permettono di stampare l'ABS senza problemi <br>
+                                l'altezza minima del layer è di 50 micron (0,05 mm) <br>
+                                la precisione del dettaglio sull asse X-Y è di 0,4mm <br> ma è possibile scendere a 0,2mm <br> o salire fino a 0,6mm per stampe particolarmente resistenti <br>
+                                velocità di stampa 50 mm/s <br>
+                                
+                                <br>[nome][tipologia]
+                                <br>[dimensioni]
+                                <br>[piatto riscaldato/coperture]
+                                <br>[altezza min layer]
+                                <br>[velocità di stampa].</p>                      </div>
           
                       <img id="printer" style="-webkit-user-select: none;cursor: zoom-in;" src="../immagini/Smart 3D Printer(800x600).png"width="744" height="558">
                     </div>
@@ -286,10 +191,22 @@
               
                   <div class="row">
                       <div class="description">
-                          <h1>Item 02</h1>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis libero erat. Integer ac purus est. Proin erat mi, pulvinar ut magna eget, consectetur auctor turpis.</p>
+                          <h1>Zmorph 2.0</h1>
+                          <p>
+                                la Zmorph 2.0 è una stampante sempiprofessionale <br>
+                                ha un piatto di stampa di 20x24x16cm  (larghezza, lunghezza, altezza) <br>
+                                è dotata di piatto riscaldato e di coperture esterne che permettono di stampare l'ABS senza problemi <br>
+                                l'altezza minima del layer è di 50 micron (0,05 mm) <br>
+                                la precisione del dettaglio sull asse X-Y è di 0,4mm <br> ma è possibile scendere a 0,2mm <br> o salire fino a 0,6mm per stampe particolarmente resistenti <br>
+                                velocità di stampa 50 mm/s <br>
+                                
+                                <br>[nome][tipologia]
+                                <br>[dimensioni]
+                                <br>[piatto riscaldato/coperture]
+                                <br>[altezza min layer]
+                                <br>[velocità di stampa].</p>
                       </div>
-                      <img id="printer" style="-webkit-user-select: none;cursor: zoom-in;" src="../immagini/printer(800x600).png"width="744" height="558">
+                      <img id="printer" style="-webkit-user-select: none;cursor: zoom-in;" src="../immagini/WhatsApp Image 2018-12-13 at 17.05.44.jpeg"width="744" height="558">
                     </div> <!-- / row -->
           
               </div> 
@@ -651,66 +568,193 @@
             <!-- / Item 00-->
           
           </section> <!-- / projects -->
-          
+         <!--review--> 
+         <div id="wrap">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+            
+                            <h3 class="review-title text-center">Reviews</h3>
+            
+                            <div class="row">
+                                <div class="col-lg-12">
+            
+                                    <div class="row">
+                                        <div class="col-md-12">
+            
+                                            <div class="carousel slide hidden-sm hidden-xs" id="testiCarousel" data-ride="carousel">
+            
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="review-card review-card--option-1 text-center">
+                                                                    <div class="review-card-img">&nbsp;</div>
+                                                                    <div class="review-author">
+                                                                        <span class="ra-author">Oscar Owens</span>
+                                                                        <ul class="ra-rating-star">
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE839;</i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="review-content">
+                                                                        <p>Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="review-card review-card--option-1 text-center">
+                                                                    <div class="review-card-img">&nbsp;</div>
+                                                                    <div class="review-author">
+                                                                        <span class="ra-author">Virginia Cortez</span>
+                                                                        <ul class="ra-rating-star">
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE839;</i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="review-content">
+                                                                        <p>Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="review-card review-card--option-1 text-center">
+                                                                    <div class="review-card-img">&nbsp;</div>
+                                                                    <div class="review-author">
+                                                                        <span class="ra-author">Margaret Hayes</span>
+                                                                        <ul class="ra-rating-star">
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE839;</i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="review-content">
+                                                                        <p>Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="review-card review-card--option-1 text-center">
+                                                                    <div class="review-card-img">&nbsp;</div>
+                                                                    <div class="review-author">
+                                                                        <span class="ra-author">Grace McGuire</span>
+                                                                        <ul class="ra-rating-star">
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE839;</i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="review-content">
+                                                                        <p>Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="review-card review-card--option-1 text-center">
+                                                                    <div class="review-card-img">&nbsp;</div>
+                                                                    <div class="review-author">
+                                                                        <span class="ra-author">Louisa Moore</span>
+                                                                        <ul class="ra-rating-star">
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE839;</i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="review-content">
+                                                                        <p>Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-md-4">
+                                                                <div class="review-card review-card--option-1 text-center">
+                                                                    <div class="review-card-img">&nbsp;</div>
+                                                                    <div class="review-author">
+                                                                        <span class="ra-author">Helena Baker</span>
+                                                                        <ul class="ra-rating-star">
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE838;</i></li>
+                                                                            <li><i class="material-icons">&#xE839;</i></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="review-content">
+                                                                        <p>Nulla quis lorem ut libero malesuada feugiat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <a class="left carousel-control" href="#testiCarousel" data-slide="prev"><i class="material-icons">&#xE5CB;</i></a>
+                                                <a class="right carousel-control" href="#testiCarousel" data-slide="next"><i class="material-icons">&#xE5CC;</i></a>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+            </div>
             
            <!-- ================================================
     Scripts
     ================================================ -->
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!--profile-->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 
-    <!-- jQuery Library -->
-    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-    <!--materialize js-->
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <!--scrollbar-->
-    <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  
+
+   
 
 
-    <!-- chartist -->
-    <script type="text/javascript" src="js/plugins/chartist-js/chartist.min.js"></script>
-
-    <!-- chartjs -->
-    <script type="text/javascript" src="js/plugins/chartjs/chart.min.js"></script>
-    <script type="text/javascript" src="js/plugins/chartjs/chart-script.js"></script>
-
-    <!-- sparkline -->
-    <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
-    <script type="text/javascript" src="js/plugins/sparkline/sparkline-script.js"></script>
-
-    <!-- google map api -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAAZnaZBXLqNBRXjd-82km_NO7GUItyKek"></script>
-
-    <!--jvectormap-->
-    <script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-    <script type="text/javascript" src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script type="text/javascript" src="js/plugins/jvectormap/vectormap-script.js"></script>
-    <div class="jvectormap-label"></div>
 
 
-    <div class="hiddendiv common"></div>
-    <div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); right: 0px;"></div>
-    <div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); right: 0px;"></div>
-    <div class="drag-target" style="right: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div>
-    <div id="toast-container"></div>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.7/chartist.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.1.1/Chart.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.10/js/min/perfect-scrollbar.jquery.min.js'></script>
-<!--immissione-->
+   <!--immissione-->
  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
                 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js'></script>
                 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-tagsinput/1.3.6/jquery.tagsinput.min.js'></script>
                 
                   
                 
-                    <script  src="aux_immissione/js/index.js"></script>
+                   
+<!--review-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+
+<!--profile-->
+<script  src="profile/js/index.js"></script>
+<!--immissione-->
+<script  src="aux_immissione/js/index.js"></script>
+
+  
+<!--review-->
+    <script  src="review/js/index.js"></script>
                 
-  <!--dashboard-->
-
-    <script  src="dashboard/js/index.js"></script>
-
+ 
 <!--balkan-->
               <script  src="balkan/js/index.js"></script>
           

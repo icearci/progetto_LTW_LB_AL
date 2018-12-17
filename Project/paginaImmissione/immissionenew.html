@@ -15,12 +15,32 @@
   
 </head>
 <body>
-    <div class="navbar">
-    <a class="active" href="../paginaHome/homenew.html">Home</a>
-    <a href="../paginaImmissione/immissionenew.html">Aggiungi le tue macchine</a>
-    <a href="../paginaRicerca/ricercanew.html">Cerca un maker</a>
-    <a href="../paginaChiSiamo/chi_siamonew.html">Chi siamo</a>
-    </div>
+     <!--nav bar-->
+     <div class="navbar">
+
+            <a class="active" href="../paginaHome/homenew.html">
+              Home</a>
+    
+            <a href="../paginaImmissione/immissionenew.html">
+              Aggiungi le tue macchine</a>
+    
+            <a href="../paginaRicerca/ricercanew.html">
+              Cerca un maker</a>
+            <!--fancy 3d log in form-->
+            <a class= "right" href="../paginaRegistrati/reg_3d/index.html">
+                Register / Log in</a>
+                <!--oppure quella classica-->
+            <!--<a class= "right" href="../paginaRegistrati/reg_classica/index.html">
+                Register / Log in</a>-->
+      
+    
+            <a class="right" href="../paginaChiSiamo/chi_siamonew.html">
+              Chi siamo</a>
+            <a class="right" href="../paginaProfilo/Profilo.html">
+                Profilo</a>
+    
+        </div>
+     <!--END nav bar-->
     <!--immissione form di andrea-->
     <!--
     <div >
@@ -106,61 +126,61 @@
         </div>-->
         <!--text inputs-->
         <div class="row">
-            <h1> Form Immissione Stampante</h1>
-            <div class="col-group col-sm-12">
-                <h1>User Data</h1>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <span class="input-desc req">Name</span>
-                        <label class="text-data">
-                            <input type="text"name="varnome"/ placeholder="John">
-                        </label>
-                    </div>
-                    <div class="col-sm-6">
-                            <span class="input-desc req">Surname</span>
+                <h1> Form Immissione Stampante</h1>
+                <div class="col-group col-sm-12">
+                    <h1>User Data</h1>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="input-desc req">Name</span>
                             <label class="text-data">
-                                <input type="text"name="varcognome"/ placeholder="Doe">
+                                <input type="text"name="varnome"/ placeholder="John">
                             </label>
                         </div>
-                    
-                    <div class="col-sm-6">
-                        <span class="input-desc">Address</span>
-                        <label class="text-data">
-                            <input type="text"name="varindirizzo"/ placeholder="1234 Mulberry Street">
-                            <div class="help"></div>
-                            <div class="help--tooltip">
-                                indicazioni riguardo l'indirizzo(?):<br>Praesent lacinia risus lacinia est vestibulum dapibus. Suspendisse condimentum dui eget blandit luctus. Vivamus vulputate condimentum eros eu efficitur. Quisque ac risus iaculis, porttitor erat vel, faucibus erat. Morbi congue, mauris nec accumsan finibus, tellus sem feugiat turpis, sit amet viverra dolor eros vel sapien.
+                        <div class="col-sm-6">
+                                <span class="input-desc req">Surname</span>
+                                <label class="text-data">
+                                    <input type="text"name="varcognome"/ placeholder="Doe">
+                                </label>
                             </div>
-                        </label>
+                        
+                        <div class="col-sm-6">
+                            <span class="input-desc">Address</span>
+                            <label class="text-data">
+                                <input type="text"name="varindirizzo"/ placeholder="1234 Mulberry Street">
+                                <div class="help"></div>
+                                <div class="help--tooltip">
+                                    indicazioni riguardo l'indirizzo(?):<br>Praesent lacinia risus lacinia est vestibulum dapibus. Suspendisse condimentum dui eget blandit luctus. Vivamus vulputate condimentum eros eu efficitur. Quisque ac risus iaculis, porttitor erat vel, faucibus erat. Morbi congue, mauris nec accumsan finibus, tellus sem feugiat turpis, sit amet viverra dolor eros vel sapien.
+                                </div>
+                            </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="input-desc">Phone number</span>
+                            <label class="text-data">
+                                <input type="text" class="text-data--phone"/>
+                            </label>
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <span class="input-desc">Phone number</span>
-                        <label class="text-data">
-                            <input type="text" class="text-data--phone"/>
-                        </label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6">
-                        <span class="input-desc">Email</span>
-                        <label class="text-data">
-                            <input type="email" name="varemail" class="email" placeholder="examples@mail.com"/>
-                        </label>
-                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="input-desc">Email</span>
+                            <label class="text-data">
+                                <input type="email" name="varemail" class="email" placeholder="examples@mail.com"/>
+                            </label>
+                        </div>
+                        
                     
-                
-                    <div class="col-sm-6">
-                        <span class="input-desc req">Today's date</span>
-                        <label class="text-data">
-                            <input type="text" class="text-data--date prefill"/>
-                        </label>
+                        <div class="col-sm-6">
+                            <span class="input-desc req">Today's date</span>
+                            <label class="text-data">
+                                <input type="text" class="text-data--date prefill"/>
+                            </label>
+                        </div>
+                        
+                        </div>
                     </div>
-                    
-                    </div>
+                   
                 </div>
             
-            </div>
-        
         <!--radio inputs-->
         <div class="row">
             <!--checkboxes input-->
@@ -403,39 +423,35 @@
                 
             </div>
             <!--info stampante-->
-            <div class="col-group col-sm-6">
-                        <h1>Info Stampante</h1>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <span class="input-desc req">Printer Name</span>
-                                <label class="text-data">
-                                    <input type="text"/ placeholder="Axghs-345">
-                                </label>
-                            </div>
-                            
+            <h1>Info Stampante</h1>
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="input-desc req">Printer Name</span>
+                    <label class="text-data">
+                        <input type="text"/ placeholder="Axghs-345">
+                    </label>
+                </div>
+                
+            
+                <div class="col-sm-4">
+                    <span class="input-desc">Printer ID Code</span>
+                    <label class="text-data">
+                        <input type="text" class="text-data--phone"/>
+                    </label>
+                </div>
+             
+                <div class="col-sm-4">
+                    <span class="input-desc req">Price per Hour</span>
+                    <label class="text-data">
+                        <input type="number" class="text-data-"/>
+                        <div class="help"></div>
+                        <div class="help--tooltip">
+                        Donec elementum elit hendrerit pellentesque condimentum. Sed et est eu lectus ornare aliquet. Aliquam facilisis purus vel tempor lobortis. Nam ut lacinia orci. Aenean enim arcu, ornare ac ex in, aliquam mattis ipsum. Curabitur volutpat magna at mauris bibendum, vitae laoreet tellus condimentum. Proin ornare.
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <span class="input-desc">Printer ID Code</span>
-                                <label class="text-data">
-                                    <input type="text" class="text-data--phone"/>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <span class="input-desc req">Price per Hour</span>
-                                <label class="text-data">
-                                    <input type="number" class="text-data-"/>
-                                    <div class="help"></div>
-                                    <div class="help--tooltip">
-                                    Donec elementum elit hendrerit pellentesque condimentum. Sed et est eu lectus ornare aliquet. Aliquam facilisis purus vel tempor lobortis. Nam ut lacinia orci. Aenean enim arcu, ornare ac ex in, aliquam mattis ipsum. Curabitur volutpat magna at mauris bibendum, vitae laoreet tellus condimentum. Proin ornare.
-                                    </div>
-                                </label>
-                            </div>
-                        </div>
+                    </label>
+                </div>
+            </div>
                         
-                        </div>
                         
             
         </div>
