@@ -57,7 +57,7 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active {
+.active_ {
   background-color: #717171;
 }
 
@@ -90,8 +90,8 @@ Barra (menu) di navigazione
 *******************************************************************************/
 /* Barra di navigazione sticky: consente di spostarsi tra relativo e fisso, in base alla posizione di scorrimento.
 Viene posizionato relativo fino a quando una determinata posizione di offset viene soddisfatta nel viewport, quindi "si attacca" in posizione (come posizione: fissa).
-Il valore sticky non è supportato in IE o Edge 15 e nelle versioni precedenti. Tuttavia, per queste versioni la barra di navigazione erediterà la posizione di default * / */
-.navbar {
+Il valore sticky non ï¿½ supportato in IE o Edge 15 e nelle versioni precedenti. Tuttavia, per queste versioni la barra di navigazione erediterï¿½ la posizione di default * / */
+.navbar_ {
     overflow: hidden;
     background-color: #333;
     position: sticky;
@@ -101,7 +101,7 @@ Il valore sticky non è supportato in IE o Edge 15 e nelle versioni precedenti. T
 }
 
 /* Crea lo stile dei collegamenti della barra di navigazione */
-.navbar a {
+.navbar_ a {
     float: left;
     display: block;
     color: white;
@@ -111,23 +111,23 @@ Il valore sticky non è supportato in IE o Edge 15 e nelle versioni precedenti. T
 }
 
 /* link allineato a destra */
-.navbar a.right {
+.navbar_ a.right {
     float: right;
 }
 
 /* cambia colore quando passa sopra (hover)) */
-.navbar a:hover {
+.navbar_ a:hover {
     background-color: #ddd;
     color: black;
 }
 
 /* link attivo (home) */
-.navbar a.active {
+.navbar_ a.active_ {
     background-color: red;
     color: white;
 }
 /*******************************************************************************
-Divisione in più colonne
+Divisione in piï¿½ colonne
 *******************************************************************************/
 /* Contenitore globale */
 .row1 {  
@@ -164,8 +164,8 @@ Divisione in più colonne
 Comportamento responsive
 *******************************************************************************/
 
-/* Responsive layout - quando lo schermo è largo meno di 700 pixel, fa in modo che 
-le due colonne si sovrappongano l'una sull'altra anziché stare una accanto all'altra 
+/* Responsive layout - quando lo schermo ï¿½ largo meno di 700 pixel, fa in modo che 
+le due colonne si sovrappongano l'una sull'altra anzichï¿½ stare una accanto all'altra 
 @media screen and (max-width: 720px) {
     .row1 {   
         flex-direction: column;
@@ -173,10 +173,10 @@ le due colonne si sovrappongano l'una sull'altra anziché stare una accanto all'a
 }
 */
 
-/* Responsive layout - quando lo schermo è largo meno di 400 px, posiziona i link 
+/* Responsive layout - quando lo schermo ï¿½ largo meno di 400 px, posiziona i link 
 di navigazione uno sopra l'altro invece che uno accanto all'altro */
 @media screen and (max-width: 400px) {
-    .navbar a {
+    .navbar_ a {
         float: none;
         width: 100%;
     }
@@ -192,8 +192,8 @@ di navigazione uno sopra l'altro invece che uno accanto all'altro */
 Galleria immagini tecnologia con CSS grid
 *******************************************************************************/
 /*
-Tutto il codice "grid" è inserito in una regola "support" nella parte inferiore del CSS).
-La regola "support" verrà eseguita solo se il  browser supporta la griglia CSS.
+Tutto il codice "grid" ï¿½ inserito in una regola "support" nella parte inferiore del CSS).
+La regola "support" verrï¿½ eseguita solo se il  browser supporta la griglia CSS.
 Flexbox viene utilizzato come fallback in modo che i browser che non supportano la griglia ricevano comunque un layout identico.
 */
 
@@ -243,8 +243,8 @@ body {
 .gallery-item {
 	/* Larghezza minima di 24rem e cresce per adattarsi allo spazio disponibile */
 	flex: 1 0 24rem;
-	/* Il valore del margine dovrebbe essere pari alla metà del valore della griglia, 
-          così i margini sugli elementi flessibili non collassano */
+	/* Il valore del margine dovrebbe essere pari alla metï¿½ del valore della griglia, 
+          cosï¿½ i margini sugli elementi flessibili non collassano */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
@@ -283,7 +283,7 @@ span.testo {
   line-height: 60px;
   }
 /*
-La seguente regola verrà eseguita solo se il tuo browser supporta la griglia CSS.
+La seguente regola verrï¿½ eseguita solo se il tuo browser supporta la griglia CSS.
 */
 @supports (display: grid) {
 	.gallery {
