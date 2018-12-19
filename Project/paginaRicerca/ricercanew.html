@@ -157,9 +157,9 @@ spiegare il funzionamento del file
                                     </label>
                                 </div>
                                 <div class="col-sm-6">
-                                    <span class="input-desc">Phone number</span>
+                                    <span class="input-desc">City</span>
                                     <label class="text-data">
-                                        <input type="text" class="text-data--phone"/>
+                                        <input type="text" name="varcitta" class="text-data"/ placeholder="Rome">
                                     </label>
                                 </div>
                             </div>
@@ -173,10 +173,10 @@ spiegare il funzionamento del file
                                 
                             
                                 <div class="col-sm-6">
-                                    <span class="input-desc ">Today's date</span>
-                                    <label class="text-data">
-                                        <input type="text" class="text-data--date prefill"/>
-                                    </label>
+                                    <span class="input-desc req">Telephone</span>
+                            <label class="text-data">
+                                <input type="text" name="vartelefono" class="text-data--phone"/>
+                            </label>
                                 </div>
                                 
                                 </div>
@@ -228,11 +228,11 @@ spiegare il funzionamento del file
                     </div>-->
                     <!--Printer Informations-->
                     <div class="col-group col-sm-6">
-                            <h1>Printer Informations</h1>
+                        <h1>FDM Printer Informations</h1>
                             
                             <span class="input-desc req">Which one of these applies to you?</span>
                             <label class="control control--radio">
-                                <input type="radio" name="stampantetipo" />
+                                <input type="radio" name="stampantetipo" value="fdm_professionale" />
                                 <span class="control--label">Professionale</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
@@ -243,7 +243,7 @@ spiegare il funzionamento del file
                             </label>
                             
                             <label class="control control--radio">
-                                <input type="radio" name="stampantetipo"/>
+                                <input type="radio" name="stampantetipo" value="fdm_semipro"/>
                                 <span class="control--label">Semipro</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
@@ -253,8 +253,8 @@ spiegare il funzionamento del file
                                 </div>
                             </label>
                             <label class="control control--radio">
-                                    <input type="radio" name="stampantetipo"/>
-                                    <span class="control--label">Amatoriale</span>
+                                <input type="radio" name="stampantetipo" value="fdm_amatoriale"/>
+                                <span class="control--label">Amatoriale</span>
                                     <div class="control--indicator"></div>
                                     <div class="control--fill"></div>
                                     <div class="help"></div>
@@ -280,7 +280,7 @@ spiegare il funzionamento del file
                             <span class="input-desc req">Which one of these applies to you?</span>
                             <label class="control control--radio">
                                 <input type="radio" name="stampantetipo" />
-                                <span class="control--label">Professionale</span>
+                                <span class="control--label">Modellismo</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
                                 <div class="help"></div>
@@ -291,7 +291,7 @@ spiegare il funzionamento del file
                             
                             <label class="control control--radio">
                                 <input type="radio" name="stampantetipo"/>
-                                <span class="control--label">Semipro</span>
+                                <span class="control--label">Dentale</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
                                 <div class="help"></div>
@@ -301,7 +301,7 @@ spiegare il funzionamento del file
                             </label>
                             <label class="control control--radio">
                                     <input type="radio" name="stampantetipo"/>
-                                    <span class="control--label">Amatoriale</span>
+                                    <span class="control--label">Oreficeria</span>
                                     <div class="control--indicator"></div>
                                     <div class="control--fill"></div>
                                     <div class="help"></div>
@@ -431,22 +431,22 @@ spiegare il funzionamento del file
                         <div class="col-sm-4">
                             <span class="input-desc req">Printer Name</span>
                             <label class="text-data">
-                                <input type="text"/ placeholder="Axghs-345">
+                                <input type="text"  name="stampantenome"/ placeholder="Axghs-345">
                             </label>
                         </div>
                         
                     
                         <div class="col-sm-4">
-                            <span class="input-desc">Printer ID Code</span>
+                            <span class="input-desc">Printer Serial Code</span>
                             <label class="text-data">
-                                <input type="text" class="text-data--phone"/>
+                                <input type="text" name="stampanteid" class="text-data"/>
                             </label>
                         </div>
                      
                         <div class="col-sm-4">
                             <span class="input-desc req">Price per Hour</span>
                             <label class="text-data">
-                                <input type="number" class="text-data-"/>
+                                <input type="number" name="stampanteprezzo" class="text-data"/>
                                 <div class="help"></div>
                                 <div class="help--tooltip">
                                 Donec elementum elit hendrerit pellentesque condimentum. Sed et est eu lectus ornare aliquet. Aliquam facilisis purus vel tempor lobortis. Nam ut lacinia orci. Aenean enim arcu, ornare ac ex in, aliquam mattis ipsum. Curabitur volutpat magna at mauris bibendum, vitae laoreet tellus condimentum. Proin ornare.
@@ -465,7 +465,7 @@ spiegare il funzionamento del file
                         
                         <span class="input-desc req">Spedizione</span>
                         <label class="control control--checkbox">
-                            <input type="checkbox" />
+                            <input type="radio" name="varspedizione" value="italia"/>
                             <span class="control--label">in Italia</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -475,7 +475,7 @@ spiegare il funzionamento del file
                             </div>
                         </label>
                         <label class="control control--checkbox">
-                            <input type="checkbox" />
+                            <input type="radio" name="varspedizione" value="internazionale" />
                             <span class="control--label">Internazionale</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -485,7 +485,7 @@ spiegare il funzionamento del file
                             </div>
                         </label>
                         <label class="control control--checkbox">
-                            <input type="checkbox" checked="checked"/>
+                            <input type="radio" name="varspedizione" value="nessuna" checked="checked"/>
                             <span class="control--label">No</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -498,8 +498,8 @@ spiegare il funzionamento del file
                     <div class="col-group col-sm-6">
                         <span class="input-desc ">Consegna a Mano</span>
                         <label class="control control--checkbox">
-                            <input type="checkbox" />
-                            <span class="control--label">in città</span>
+                            <input type="radio" name="varconsegna" value="citta"/>
+                            <span class="control--label">In citta'</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
                             <div class="help"></div>
@@ -509,9 +509,9 @@ spiegare il funzionamento del file
                             
                         </label>
                         <label class="control control--checkbox">
-                            <input type="checkbox" />
-                            <span class="control--label">nella zona</span>
-                            <div class="control--indicator"></div>
+                            <input type="radio" name="varconsegna" value="zona"/>
+                    <span class="control--label">Nella zona</span>
+                    <div class="control--indicator"></div>
                             <div class="control--fill"></div>
                             <div class="help"></div>
                             <div class="help--tooltip">
@@ -520,7 +520,7 @@ spiegare il funzionamento del file
                             
                         </label>
                         <label class="control control--checkbox">
-                            <input type="checkbox" checked="checked"/>
+                            <input type="radio" name="varconsegna" value="nessuna" checked="checked"/>
                             <span class="control--label">No</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
