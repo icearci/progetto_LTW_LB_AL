@@ -103,7 +103,7 @@ input[type="submit"]:active {
   text-align: center;
 }
 
-.right {
+.right_ {
   position: absolute;
   top: 0;
   right: 0;
@@ -117,7 +117,7 @@ input[type="submit"]:active {
   border-radius: 0 2px 2px 0;
 }
 
-.right .loginwith {
+.right_ .loginwith {
   display: block;
   margin-bottom: 40px;
   font-size: 28px;
