@@ -13,8 +13,8 @@ if ($conn->connect_error) {
 }
 
 //inserisce i dati dal form html con il metodo post
-$sql = "INSERT INTO Utenti (nome, cognome, email, indirizzo, stampante3D, laser) VALUES"
-. " ('$_POST[varnome]','$_POST[varcognome]','$_POST[varemail]','$_POST[varindirizzo]','$_POST[stampantetipo]','$_POST[lasertipo]')";
+$sql = "INSERT INTO Utenti (nome, cognome, email, indirizzo, citta, telefono, macchinario, nome_macchinario, id_macchinario, prezzo_ora, spedizione, consegna) VALUES"
+. " ('$_POST[varnome]','$_POST[varcognome]','$_POST[varemail]','$_POST[varindirizzo]','$_POST[varcitta]','$_POST[vartelefono]','$_POST[stampantetipo]','$_POST[stampantenome]','$_POST[stampanteid]','$_POST[stampanteprezzo]','$_POST[varspedizione]','$_POST[varconsegna]')";
 
 if ($conn->query($sql) === TRUE) {
     echo "Nuovo record creato con successo!";
