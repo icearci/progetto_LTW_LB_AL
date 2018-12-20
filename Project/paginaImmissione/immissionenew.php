@@ -1,4 +1,4 @@
- 
+<html>
 <?php
 $servername = "localhost";
 $username = "root";
@@ -17,7 +17,7 @@ $sql = "INSERT INTO Utenti (nome, cognome, email, indirizzo, citta, telefono, ma
 . " ('$_POST[varnome]','$_POST[varcognome]','$_POST[varemail]','$_POST[varindirizzo]','$_POST[varcitta]','$_POST[vartelefono]','$_POST[stampantetipo]','$_POST[stampantenome]','$_POST[stampanteid]','$_POST[stampanteprezzo]','$_POST[varspedizione]','$_POST[varconsegna]')";
 
 if ($conn->query($sql) === TRUE) {
-    echo "Nuovo record creato con successo!";
+    echo "Nuovo record creato con successo!  ";
     
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
@@ -43,10 +43,16 @@ if ($result->num_rows > 0) {
 
 
 
+
 //chiude la connessione al database
 $conn->close();
 
 ?>
+    <a  href="../paginaHome.3/homenew.html">[clicca qui se non vieni automaticamente reindirizzato]</a>
+    <meta http-equiv="refresh" content="2; URL=../paginaHome.3/homenew.html">
+    <meta name="keywords" content="automatic redirection">
+</html>
+
 
 
 

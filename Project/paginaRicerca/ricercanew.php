@@ -17,16 +17,22 @@ $sql = "SELECT * FROM utenti";
 
 if( isset($_POST['ricerca']) ){
  if( isset($_POST['stampantetipo']) ){
+  if( isset($_POST['vartipospedizione']) ){
      
     $citta = mysqli_real_escape_string($conn, htmlspecialchars($_POST['ricerca']));
     $macchinario = mysqli_real_escape_string($conn, htmlspecialchars($_POST['stampantetipo']));
-  
-    
-    
-    
-    $sql = "SELECT * FROM utenti WHERE citta ='$citta' AND macchinario = '$macchinario'";
-      
-}
+    $tipospedizione = mysqli_real_escape_string($conn, htmlspecialchars($_POST['vartipospedizione']));
+    if($tipospedizione == "manocitta"){
+        $sql = "SELECT * FROM utenti WHERE citta ='$citta' AND macchinario = '$macchinario' AND (consegna = 'citta' OR consegna = 'zona')";
+    }
+    if($tipospedizione == "ita"){
+        $sql = "SELECT * FROM utenti WHERE (spedizione ='italia' OR spedizione ='internazionale') AND macchinario = '$macchinario'";
+    }
+    if($tipospedizione == "int"){
+        $sql = "SELECT * FROM utenti WHERE spedizione ='internazionale' AND macchinario = '$macchinario'";
+    }
+  }    
+ }
 }
 
 $result = $conn->query($sql);
@@ -101,10 +107,42 @@ spiegare il funzionamento del file
                             </div>
                             <div class="row">      
                                 
-                                </div>
-                            </div>
-                           
-                        </div>
+                            </div>                                
+                         </div>                       
+                         <div class="col-group col-sm-6">
+                <span class="input-desc ">Metodo di spedizione</span>
+                <label class="control control--checkbox">
+                    <input type="radio" name="vartipospedizione" value="manocitta"/>
+                    <span class="control--label">consegna a mano</span>
+                    <div class="control--indicator"></div>
+                    <div class="control--fill"></div>
+                    <div class="help"></div>
+                    <div class="help--tooltip">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                    </div>
+                    
+                </label>
+                <label class="control control--checkbox">
+                    <input type="radio" name="vartipospedizione" value="ita" checked="checked"/>
+                    <span class="control--label">spedizione in Italia</span>
+                    <div class="control--indicator"></div>
+                    <div class="control--fill"></div>
+                    <div class="help"></div>
+                    <div class="help--tooltip">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                    </div>
+                </label>
+                <label class="control control--checkbox">
+                    <input type="radio" name="vartipospedizione" value="int" checked="checked"/>
+                    <span class="control--label">spedizione internazionale</span>
+                    <div class="control--indicator"></div>
+                    <div class="control--fill"></div>
+                    <div class="help"></div>
+                    <div class="help--tooltip">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus condimentum scelerisque. Donec feugiat velit.<br><br>Tooltips can have <a href="#">links</a>, <font color=red size=3em>and</font> <b>formatting</b> <u>if</u> <i>needed</i>.
+                    </div>
+                </label>
+                     </div>
                     
                 <!--radio inputs-->
                 <div class="row">
@@ -162,7 +200,7 @@ spiegare il funzionamento del file
                             <h1> SLA Printer informations</h1>
                             <span class="input-desc req">Which one of these applies to you?</span>
                             <label class="control control--radio">
-                                <input type="radio" name="stampantetipo" />
+                                <input type="radio" name="stampantetipo" value="sla_modellismo"/>
                                 <span class="control--label">Modellismo</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
@@ -173,7 +211,7 @@ spiegare il funzionamento del file
                             </label>
                             
                             <label class="control control--radio">
-                                <input type="radio" name="stampantetipo"/>
+                                <input type="radio" name="stampantetipo" value="sla_dentale"/>
                                 <span class="control--label">Dentale</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
@@ -183,7 +221,7 @@ spiegare il funzionamento del file
                                 </div>
                             </label>
                             <label class="control control--radio">
-                                    <input type="radio" name="stampantetipo"/>
+                                    <input type="radio" name="stampantetipo" value="sla_oreficeria"/>
                                     <span class="control--label">Oreficeria</span>
                                     <div class="control--indicator"></div>
                                     <div class="control--fill"></div>
@@ -209,7 +247,7 @@ spiegare il funzionamento del file
                         <h1> Laser cutter Informations</h1>
                         <span class="input-desc req">Which one of these applies to you?</span>
                         <label class="control control--radio">
-                            <input type="radio" name="stampantetipo" />
+                            <input type="radio" name="stampantetipo" value="lsr_legni"/>
                             <span class="control--label">Legni e Plastiche</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -220,7 +258,7 @@ spiegare il funzionamento del file
                         </label>
                         
                         <label class="control control--radio">
-                            <input type="radio" name="stampantetipo"/>
+                            <input type="radio" name="stampantetipo" value="lsr_plexiglass"/>
                             <span class="control--label">Plexiglass e simili</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -230,7 +268,7 @@ spiegare il funzionamento del file
                             </div>
                         </label>
                         <label class="control control--radio">
-                                <input type="radio" name="stampantetipo"/>
+                                <input type="radio" name="stampantetipo" value="lsr_metalli"/>
                                 <span class="control--label">Metalli e Vetro</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
@@ -256,7 +294,7 @@ spiegare il funzionamento del file
                         <h1>CNC Informations</h1>
                         <span class="input-desc req">Which one of these applies to you?</span>
                         <label class="control control--radio">
-                            <input type="radio" name="stampantetipo" />
+                            <input type="radio" name="stampantetipo" value="cnc_legni_morbidi"/>
                             <span class="control--label">Legni morbidi</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -267,7 +305,7 @@ spiegare il funzionamento del file
                         </label>
                         
                         <label class="control control--radio">
-                            <input type="radio" name="stampantetipo"/>
+                            <input type="radio" name="stampantetipo" value="cnc_legni_duri"/>
                             <span class="control--label">Legni duri</span>
                             <div class="control--indicator"></div>
                             <div class="control--fill"></div>
@@ -277,7 +315,7 @@ spiegare il funzionamento del file
                             </div>
                         </label>
                         <label class="control control--radio">
-                                <input type="radio" name="stampantetipo"/>
+                                <input type="radio" name="stampantetipo" value="cnc_alluminio"/>
                                 <span class="control--label">Alluminio</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
@@ -287,7 +325,7 @@ spiegare il funzionamento del file
                                 </div>
                             </label>
                             <label class="control control--radio">
-                                <input type="radio" name="stampantetipo"/>
+                                <input type="radio" name="stampantetipo" value="cnc_metalli"/>
                                 <span class="control--label">Metalli</span>
                                 <div class="control--indicator"></div>
                                 <div class="control--fill"></div>
@@ -339,13 +377,18 @@ spiegare il funzionamento del file
             
 <table id="tabella">
 <tr>
-<th>ID</th>
+<!--<th>ID</th>-->
 <th>Nome</th>
 <th>Cognome</th>
 <th>Indirizzo</th>
 <th>Citta'</th>
+<th>consegna</th>
 <th>Email</th>
+<th>telefono</th>
 <th>Macchinario</th>
+<th>nome macchina</th>
+<th>costo-ora</th>
+
 
 </tr>
 
@@ -354,13 +397,16 @@ while($row = $result->fetch_assoc()){
 ?>
 
     <tr>
-    <td><?php echo $row['id']; ?></td>
     <td><?php echo $row['nome']; ?></td>
     <td><?php echo $row['cognome']; ?></td>
     <td><?php echo $row['indirizzo']; ?></td>
     <td><?php echo $row['citta']; ?></td>
+    <td><?php echo $row['consegna']; ?></td>
     <td><?php echo $row['email']; ?></td>
+    <td><?php echo $row['telefono']; ?></td>
     <td><?php echo $row['macchinario']; ?></td>
+    <td><?php echo $row['nome_macchinario']; ?></td>
+    <td><?php echo $row['prezzo_ora']; ?></td>
     
     </tr>
 

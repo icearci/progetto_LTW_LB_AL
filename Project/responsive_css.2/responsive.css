@@ -25,7 +25,7 @@ img {vertical-align: middle;}
 
 /* Slide: testo */
 .textslide {
-  color: red;
+  color: firebrick;
   font-size: 60px;
   padding: 0px;
   position: absolute;
@@ -36,7 +36,7 @@ img {vertical-align: middle;}
 
 /* Slide: testo della prima diapositiva */
 .textslide1 {
-  color: red;
+  color: firebrick;
   font-size: 95px;
   padding: 0px;
   position: absolute;
@@ -62,7 +62,7 @@ img {vertical-align: middle;}
 }
 
 /* Slide: animazione fading */
-.fade {
+.fadeMySlide {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 3s;
   animation-name: fade;
@@ -123,7 +123,7 @@ Il valore sticky non � supportato in IE o Edge 15 e nelle versioni precedenti.
 
 /* link attivo (home) */
 .navbar_ a.active_ {
-    background-color: red;
+    background-color: firebrick;
     color: white;
 }
 /*******************************************************************************
@@ -269,7 +269,7 @@ body {
   bottom: 0px;
   left: 0px;
   width: 100%;
-  background: red;
+  background: firebrick;
   /* Per IE 5.5, 6 e 7*/
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
   /* Per IE 8*/
@@ -341,7 +341,7 @@ Chi siamo -flip immagine
 
 /* Stile della parte posteriore */
 .flip-card-back {
-  background-color: red;
+  background-color: firebrick;
   color: white;
   transform: rotateY(180deg);
 } 
@@ -391,6 +391,6 @@ Tabella utenti in ricerca mysql - zebrata con effetto hover
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: red;
+  background-color: firebrick;
   color: white;
 }
